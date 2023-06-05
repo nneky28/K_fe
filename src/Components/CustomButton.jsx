@@ -16,8 +16,8 @@ function CustomButton(props) {
         <Button
           color="#FFFFFF"
           bg={props.bg ? props.bg : "#FA4354"}
-          size="sm"
-          w="21"
+          size={props?.size ? props.size : "md"}
+          w={props.width ? props.width : "100%"}
           fontSize={"15px"}
           _hover={{ bg: "rgba(250, 67, 84, 0.5)" }}
           _active={{
@@ -29,6 +29,8 @@ function CustomButton(props) {
           }}
           onClick={onOpen}
           style={props.style}
+          textAlign={"center"}
+          alignItems={"center"}
         >
           Join our waitlist
         </Button>

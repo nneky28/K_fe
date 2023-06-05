@@ -4,12 +4,7 @@ import Marquee from "react-fast-marquee";
 
 function Experience() {
   return (
-    <Box
-      // bgGradient="linear(to-t, #060809 0%,#060809)"
-      p={4}
-      h={["50vh", "75vh"]}
-      marginTop={"18%"}
-    >
+    <Box p={4} h={["45vh", "60vh"]} marginTop={["30%", "18%"]}>
       <Box zIndex={0} position={"relative"}>
         <Marquee>
           <Box>

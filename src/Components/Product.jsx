@@ -31,19 +31,24 @@ function Product() {
         >
           <Stack p={[0, 2]}>
             <CardBody>
-              <Heading color="#FFFFFF" fontSize={"35px"} mt={2} ms={3}>
+              <Heading color="#FFFFFF" fontSize={"35px"} mt={2} ms={[0, 3]}>
                 Sell 10x faster on
               </Heading>
-              <Heading color="#FFFFFF" fontSize={"35px"} mt={2} ms={3}>
+              <Heading
+                color="#FFFFFF"
+                fontSize={"35px"}
+                mt={[0, 2]}
+                ms={[0, 3]}
+              >
                 Kommerce
               </Heading>
               <Text
                 py="2"
                 color="#FFFFFF"
                 fontSize="14px"
-                mt={5}
+                mt={[1, 3]}
                 lineHeight={2}
-                ms={3}
+                ms={[0, 3]}
               >
                 Gain access to a larger audience of engaged shoppers, interact
                 directly with customers in real-time to boost trust and sales,

@@ -72,11 +72,10 @@ function Gallery() {
           src="./discover.png"
           style={{
             objectFit: "contain",
-            // width: "30vw",
             marginTop: "10%",
             marginBottom: "1%",
           }}
-          w={["40vw", "30vw"]}
+          w={["60vw", "30vw"]}
         />
       </Center>
       <Center p={[2, 0]}>
@@ -93,10 +92,14 @@ function Gallery() {
         </Text>
       </Center>
 
-      <Box mt={"7%"} h={"75vh"} pos={"relative"}>
+      <Box
+        mt={["15%", "18%", , "7%", "7%"]}
+        h={["60vh", "75vh"]}
+        pos={"relative"}
+      >
         <Box
           boxShadow="dark-lg"
-          p="10"
+          p={["0", "10"]}
           rounded="full"
           // bg=" #060809"
           // bg="#1E1E1E"
@@ -133,7 +136,7 @@ function Gallery() {
                 gradientWidth={200}
                 gradientColor={[0, 0, 0.9]}
                 direction="right"
-                speed={7}
+                speed={8}
               >
                 {images1.map((item, index) => (
                   <Box key={index}>

@@ -18,10 +18,10 @@ function Shop() {
     <Center
       // bgGradient="linear(to-t, #060809 0%,#060809)"
       pos={"relative"}
-      mt={"5%"}
+      mt={["15%", "5%"]}
     >
       <SimpleGrid columns={[1, 2]} spacing={5} ms={["0%", "5%"]} px={[4, "5%"]}>
-        <Flex gap={["2", "0"]} w={["100%", "90%"]}>
+        <Flex gap={["4", "0"]} w={["100%", "90%"]}>
           <Box mt={[10, 40]}>
             <Image
               src={girls}
@@ -32,7 +32,7 @@ function Shop() {
             <Image
               src={family}
               objectFit={"contain"}
-              mt={[7, 4]}
+              mt={[5, 4]}
               ms={["1%", "0%"]}
               style={{ width: "360px" }}
             />
@@ -41,7 +41,7 @@ function Shop() {
             <Image
               src={woman}
               objectFit={"contain"}
-              style={{ width: "309px", height: "325px" }}
+              style={{ width: "309px", height: "317px" }}
               ms={["0%", "5%"]}
             />
           </Box>
