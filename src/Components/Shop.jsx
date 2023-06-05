@@ -15,22 +15,26 @@ import CustomButton from "./CustomButton";
 // Flex
 function Shop() {
   return (
-    <Center bgGradient="linear(to-l, #060809 0%,#060809)">
-      <SimpleGrid columns={2} spacing={5} ms={["0%", "5%"]} px={[4, "5%"]}>
-        <Flex gap={["2", "0"]} w={"90%"}>
+    <Center
+      // bgGradient="linear(to-t, #060809 0%,#060809)"
+      pos={"relative"}
+      mt={"5%"}
+    >
+      <SimpleGrid columns={[1, 2]} spacing={5} ms={["0%", "5%"]} px={[4, "5%"]}>
+        <Flex gap={["2", "0"]} w={["100%", "90%"]}>
           <Box mt={[10, 40]}>
             <Image
               src={girls}
               objectFit={"contain"}
-              ms={["0%", "9%"]}
-              style={{ width: "230px" }}
+              ms={["20%", "19%"]}
+              w={["150px", "210px"]}
             />
             <Image
               src={family}
               objectFit={"contain"}
-              mt={[1, 4]}
+              mt={[7, 4]}
               ms={["1%", "0%"]}
-              style={{ width: "350px" }}
+              style={{ width: "360px" }}
             />
           </Box>
           <Box mt={[0, 40]}>

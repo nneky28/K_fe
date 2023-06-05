@@ -30,7 +30,6 @@ function CustomModal({ isOpen, onClose, text }) {
 
   const modalStyle = {
     border: "0.1px solid #63768D",
-    // width: "27%",
   };
 
   const inputStyles = {

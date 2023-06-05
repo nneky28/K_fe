@@ -18,7 +18,7 @@ function CustomButton(props) {
           bg={props.bg ? props.bg : "#FA4354"}
           size="sm"
           w="21"
-          fontSize={"13px"}
+          fontSize={"15px"}
           _hover={{ bg: "rgba(250, 67, 84, 0.5)" }}
           _active={{
             bg: "#FA4354",

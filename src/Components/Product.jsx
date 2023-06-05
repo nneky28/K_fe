@@ -17,9 +17,9 @@ import CustomButton from "./CustomButton";
 function Product() {
   return (
     <Center
-      px={["5%", "10%"]}
-      bgGradient="linear(to-t, #060809 0%,#060809)"
-      w={"102%"}
+      px={["4%", "10%"]}
+      // bgGradient="linear(to-t, #060809 0%,#060809)"
+      w={["100%", "102%"]}
       h={["95vh", "80vh"]}
     >
       <Center mt={"15%"}>
@@ -29,7 +29,7 @@ function Product() {
           bg="#1A1C1F"
           borderRadius={20}
         >
-          <Stack p={2}>
+          <Stack p={[0, 2]}>
             <CardBody>
               <Heading color="#FFFFFF" fontSize={"35px"} mt={2} ms={3}>
                 Sell 10x faster on
@@ -40,7 +40,7 @@ function Product() {
               <Text
                 py="2"
                 color="#FFFFFF"
-                fontSize="12px"
+                fontSize="14px"
                 mt={5}
                 lineHeight={2}
                 ms={3}

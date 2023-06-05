@@ -16,30 +16,30 @@ export default function Footer() {
     <Box>
       <Box
         pos={"relative"}
-        bgGradient="linear(to-t, #060809 0%,#060809)"
+        // bgGradient="linear(to-t, #060809 0%,#060809)"
         h={["40vh", "50vh"]}
       >
         <Center px={[4, 0]}>
           <Heading
             color={"white"}
-            fontSize={["16px", "20px"]}
+            fontSize={["16px", "22px"]}
             textAlign={"center"}
           >
             Get ready to redefine your shopping experience.
           </Heading>
         </Center>
         <Center mt={5} position={"relative"}>
-          <Text color={"white"} fontSize={"12px"} px={4}>
+          <Text color={"white"} fontSize={"14px"} px={4}>
             Join our waitlist now and secure your spot as one of the first to
           </Text>
         </Center>
         <Center position={"relative"}>
-          <Text color={"white"} fontSize={"12px"} px={4}>
+          <Text color={"white"} fontSize={"14px"} px={4}>
             experience the revolutionary live shopping app when it
           </Text>
         </Center>
         <Center position={"relative"}>
-          <Text color={"white"} fontSize={"12px"}>
+          <Text color={"white"} fontSize={"14px"}>
             launches.
           </Text>
         </Center>

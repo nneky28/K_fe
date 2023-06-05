@@ -31,8 +31,7 @@ function Hero() {
         w={"100%"}
         overflow={"hidden"}
         h={"100vh"}
-        bgGradient="linear(to-top,  #1E1E1E 6%, #060809 10%)"
-        // bgGradient="linear(to-tl, #060809 10%, #1E1E1E 900%)"
+        // bg=" #060809"
       >
         <Box mt={"35%"} ms={"8%"} pos={"relative"}>
           <Box display={"flex"} flexDirection={"row"} boxShadow="lg">
@@ -52,21 +51,22 @@ function Hero() {
               <Image
                 src={video}
                 objectFit="contain"
-                style={{ width: "160px", height: "60px" }}
+                style={{ width: "175px", height: "60px" }}
               />
-              <Text
+              <Heading
                 position="absolute"
                 bottom="1"
-                right="3"
-                px="3"
-                // py="1"
-                top="0"
+                right="5"
+                px="1"
                 color="#FFEBB3"
-                fontSize={"43px"}
-                fontWeight="bold"
+                as="h1"
+                size="2xl"
+                noOfLines={1}
+                brightness="90%"
+                mt={2}
               >
                 video
-              </Text>
+              </Heading>
             </Box>
           </Box>
           <Heading as="h1" size="2xl" noOfLines={1} color={"white"}>
@@ -93,33 +93,47 @@ function Hero() {
               value={value}
               onChange={(e) => setValue(e.target.value)}
             />
-            <CustomButton value={value} />
+            <CustomButton
+              value={value}
+              // style={{ fontSize: "28px", width: "80px" }}
+            />
           </Box>
         </Box>
 
-        <Flex filter="auto" brightness="90%" ms={"20%"} pos={"relative"}>
-          <Box
-            mt={"109%"}
-            pos={"absolute"}
-            mr={"20%"}
-            left={"-22%"}
-            display={["none", "flex"]}
-          >
-            <Image
-              src="./star.svg"
-              objectFit={"contain"}
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <ReactPlayer
-            url="https://res.cloudinary.com/duprallvm/video/upload/v1685626517/Screen_Recording_2023-06-01_at_10.53.14_c1wzv9.mov"
-            controls
-            playing={true}
-            width="80%"
-            height="120%"
-            loop={true}
-          />
-        </Flex>
+        <Box
+          backgroundImage="url('./shadow.png')"
+          backgroundPosition="center"
+          backgroundRepeat="no-repeat"
+          backgroundSize={"cover"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          pos={"relative"}
+        >
+          <Flex filter="auto" brightness="90%" ms={"20%"} pos={"relative"}>
+            <Box
+              mt={"109%"}
+              pos={"absolute"}
+              mr={"20%"}
+              left={"-22%"}
+              display={["none", "flex"]}
+            >
+              <Image
+                src="./star.svg"
+                objectFit={"contain"}
+                style={{ width: "100%" }}
+              />
+            </Box>
+            <Box>
+              <ReactPlayer
+                url="https://res.cloudinary.com/duprallvm/video/upload/v1685626517/Screen_Recording_2023-06-01_at_10.53.14_c1wzv9.mov"
+                playing={true}
+                loop={true}
+                width="70%"
+                height="120%"
+              />
+            </Box>
+          </Flex>
+        </Box>
       </SimpleGrid>
     </>
   );

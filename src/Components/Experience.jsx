@@ -1,50 +1,50 @@
-import { Box, Image, Center } from "@chakra-ui/react";
+import { Box, Image, Center, Text, Heading } from "@chakra-ui/react";
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 function Experience() {
   return (
     <Box
-      bgGradient="linear(to-t, #060809 0%,#060809)"
+      // bgGradient="linear(to-t, #060809 0%,#060809)"
       p={4}
-      h={["40vh", "85vh"]}
+      h={["50vh", "75vh"]}
+      marginTop={"18%"}
     >
-      <Box
-        bgImage="url('./text.svg')"
-        backgroundPosition="center"
-        backgroundRepeat="repeat"
-        backgroundSize={"75% 35%"}
-        height="15vh"
-        alignItems="center"
-        justifyContent="center"
-        position={"relative"}
-        marginTop={"15%"}
-      >
-        <Center>
-          <Box
-            bgImage="url('./phoneBg.png')"
-            backgroundPosition="center"
-            backgroundRepeat="no-repeat"
-            backgroundSize={"205px 270px"}
-            height="35vh"
-            alignItems="center"
-            justifyContent="center"
-            position="relative"
-            bottom={"14"}
-            w={["80%", "27.5%"]}
-            borderRadius={"40%"}
-          >
-            <Center>
-              <Image
-                src="./phone.png"
-                objectFit="contain"
-                style={{
-                  top: 13,
-                }}
-              />
-            </Center>
+      <Box zIndex={0} position={"relative"}>
+        <Marquee>
+          <Box>
+            <Image src="./text.svg" objectFit="contain" />
           </Box>
-        </Center>
+        </Marquee>
+        <Marquee direction="right">
+          <Box>
+            <Image src="./text.svg" objectFit="contain" />
+          </Box>
+        </Marquee>
+        <Marquee>
+          <Box>
+            <Image src="./text.svg" objectFit="contain" />
+          </Box>
+        </Marquee>
       </Box>
+      <Center>
+        <Box
+          bgImage="url('./phone.png')"
+          backgroundPosition="center"
+          backgroundRepeat="no-repeat"
+          backgroundSize={"215px 270px"}
+          height={["60vh", "65vh"]}
+          alignItems="center"
+          justifyContent="center"
+          position="absolute"
+          w={["100%", "27.5%"]}
+          // bg="#060809"
+        >
+          <Center>
+            <Image src="./phone.png" objectFit="cover" />
+          </Center>
+        </Box>
+      </Center>
     </Box>
   );
 }

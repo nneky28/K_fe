@@ -41,26 +41,12 @@ function Navbar() {
     >
       <Image src="./logo.svg" style={{ width: "100px", height: "23px" }} />
       <Box display={["none", "flex"]}>
-        {/* <Box
-          as="button"
-          size="sm"
-          height="40px"
-          width="150px"
-          borderWidth={0.1}
-          borderColor="#FA4354"
-          bg="transparent"
-          color="white"
-          fontSize={"13px"}
-          borderRadius={8}
-        >
-          Join our waitlist
-        </Box> */}
         <CustomButton
           bg="transparent"
           style={{
             border: "0.1px solid #FA4354",
-            width: "125%",
-            fontSize: "11px",
+            width: "140%",
+            fontSize: "12px",
           }}
         />
       </Box>
