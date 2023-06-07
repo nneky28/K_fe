@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: 'CustomFontBold';
-  src: url('./fonts/Matter-Bold.woff') format('truetype');
+  src: url('./fonts/MatterSQ-Bold.woff') format('truetype');
 }
 
 #root {

@@ -22,7 +22,7 @@ function Shop() {
         ms={["0%", "5%"]}
         px={[4, "5%"]}
       >
-        <Flex gap={["4", "0", "1"]} w={["100%", "95%"]}>
+        <Flex gap={["4", "0", "2"]} w={["100%", "95%"]}>
           <Box mt={[10, 40]}>
             <Image
               src={girls}
@@ -32,31 +32,37 @@ function Shop() {
                 sm: "20%",
                 md: "39%",
                 lg: "40%",
-                xl: "40%",
+                xl: "10%",
                 "2xl": "30%",
               }}
-              w={{ "2xl": "70%", xl: "60%", lg: "60%", md: "60%", base: "80%" }}
+              w={{
+                "2xl": "70%",
+                xl: "19vw",
+                lg: "40vw",
+                md: "60vh",
+                base: "80%",
+              }}
             />
             <Image
               src={family}
               objectFit={"cover"}
               mt={[1, 2, 4, 3]}
-              // ms={["1%", "0%"]}
-              // style={{ width: "360px" }}
+              w={{
+                "2xl": "70%",
+                xl: "215vw",
+                lg: "60%",
+                md: "60%",
+                base: "80%",
+              }}
             />
           </Box>
-          <Box
-            mt={[0, 40]}
-            w={{
-              base: "470%",
-              md: "360%",
-              lg: "265%",
-              xl: "209%",
-              "2xl": "147%",
-              sm: "455%",
-            }}
-          >
-            <Image src={woman} objectFit={"cover"} ms={["0%", "5%"]} />
+          <Box mt={[0, 40]}>
+            <Image
+              src={woman}
+              objectFit={"contain"}
+              ms={["0%", "5%"]}
+              w={{ md: "180vw", sm: "320vw" }}
+            />
           </Box>
         </Flex>
 
@@ -95,7 +101,7 @@ function Shop() {
           </Heading>
           <Box
             w={40}
-            mt={{ sm: 2, base: 2, md: 3, lg: "3%", xl: "4%", "2xl": "5%" }}
+            mt={{ sm: 2, base: 2, md: 3, lg: "3%", xl: "4%", "2xl": "3%" }}
           >
             <Text
               fontSize={{
@@ -118,10 +124,10 @@ function Shop() {
             </Text>
           </Box>
           <Box
-            mt={{ sm: 2, base: 2, md: 2, lg: "3%", "2xl": "5%" }}
+            mt={{ sm: 2, base: 2, md: 2, lg: "3%", "2xl": "3%" }}
             display={["none", "none", "none", "flex"]}
           >
-            <CustomButton />
+            <CustomButton width={"15vw"} p={3} />
           </Box>
         </Box>
       </SimpleGrid>

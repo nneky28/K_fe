@@ -5,13 +5,12 @@ import {
   Heading,
   Text,
   Flex,
-  Image,
   AspectRatio,
+  Image,
 } from "@chakra-ui/react";
 import React from "react";
 import ReactPlayer from "react-player";
 import Marquee from "react-fast-marquee";
-// import "../styles.css";
 
 function Gallery() {
   const images = [
@@ -61,12 +60,12 @@ function Gallery() {
 
   return (
     <Box w={"100%"}>
-      <Center>
+      <Center mt={16}>
         <Image
           src="./discover.png"
           style={{
             objectFit: "contain",
-            marginTop: "10%",
+
             marginBottom: "1%",
           }}
           w={{ base: "60%", sm: "50%", md: "53%", lg: "31%", "2xl": "28%" }}

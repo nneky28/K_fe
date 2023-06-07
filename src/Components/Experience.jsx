@@ -6,21 +6,22 @@ import { phoneImage, text } from "../assets/images";
 function Experience() {
   return (
     <Box
+      pos={"relative"}
       h={{
-        base: "22vh",
+        base: "25vh",
         md: "35vh",
         lg: "20vh",
-        xl: "80vh",
-        sm: "22vh",
-        "2xl": "45vh",
+        xl: "60vh",
+        sm: "25vh",
+        "2xl": "30vh",
       }}
       marginTop={{
         sm: "50%",
         base: "100%",
         md: "40%",
         lg: "40%",
-        xl: "30%",
-        "2xl": "10%",
+        xl: "10%",
+        "2xl": "15%",
       }}
       // w={"100%"}
       bg="#060809"
@@ -52,7 +53,14 @@ function Experience() {
           alignItems="center"
           justifyContent="center"
           position="absolute"
-          w={{ base: "100%", md: "70%", xl: "35%", lg: "45%", "2xl": "35vh" }}
+          w={{
+            base: "90%",
+            md: "70%",
+            xl: "30%",
+            lg: "45%",
+            "2xl": "35vh",
+            sm: "80%",
+          }}
         >
           <Center>
             <Image src={phoneImage} objectFit="cover" />

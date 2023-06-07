@@ -112,7 +112,7 @@ function Product() {
             </CardBody>
             <CardFooter display={["none", "none", "none", "flex"]}>
               <Box ms={3} mb={2}>
-                <CustomButton />
+                <CustomButton width={"15vw"} p={3} />
               </Box>
             </CardFooter>
           </Stack>

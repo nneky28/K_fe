@@ -48,9 +48,9 @@ function Navbar() {
       <Box display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}>
         <CustomButton
           bg="transparent"
+          width={{ md: "18vw", xl: "14vw" }}
           style={{
             border: "0.1px solid #FA4354",
-            width: "140%",
             fontSize: "12px",
           }}
         />

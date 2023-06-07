@@ -32,7 +32,7 @@ export default function Footer() {
             px={{ sm: 5, base: 5, lg: 6, xl: 12 }}
             fontFamily={"CustomFont, Matter-regular"}
             textAlign={"center"}
-            w={{ base: "90%", sm: "90%", xl: "90%", md: "70%", "2xl": "50%" }}
+            w={{ base: "90%", sm: "90%", xl: "90%", md: "80%", "2xl": "50%" }}
           >
             Get ready to redefine your shopping experience.
           </Heading>
@@ -43,15 +43,15 @@ export default function Footer() {
             fontSize={{
               base: "13px",
               sm: "14px",
-              md: "15px",
+              md: "14px",
               lg: "14.5px",
               xl: "15px",
               "2xl": "17px",
             }}
             py={2}
-            px={{ sm: 25, base: 12, lg: 6, xl: 12 }}
+            px={{ sm: 30, base: 12, lg: 6, xl: 12, md: 6 }}
             textAlign={"center"}
-            w={{ base: "60%", sm: "85%", xl: "50%", md: "70%", "2xl": "50%" }}
+            w={{ base: "60%", sm: "100%", xl: "50%", md: "75%", "2xl": "50%" }}
           >
             Join our waitlist now and secure your spot as one of the first to
             experience the revolutionary live shopping app when it launches.
@@ -63,7 +63,7 @@ export default function Footer() {
           position={"relative"}
           display={["none", "none", "flex", "flex"]}
         >
-          <CustomButton />
+          <CustomButton width={{ md: "20vw", xl: "14vw" }} p={3} />
         </Center>
       </Box>
       <Box
@@ -102,19 +102,7 @@ export default function Footer() {
         // overflow="hidden"
         w={"100%"}
       >
-        <CustomButton
-          size="lg"
-          style={{
-            border: "0.1px solid #FA4354",
-            width: "400%",
-            fontSize: "15px",
-            height: "5vh",
-            borderRadius: "0px",
-            alignItem: "center",
-            textAlign: "center",
-            overflow: "hidden",
-          }}
-        />
+        <CustomButton width={"100vw"} p={5} />
       </Box>
     </Box>
   );
