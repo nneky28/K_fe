@@ -17,8 +17,8 @@ function CustomButton(props) {
           color="#FFFFFF"
           bg={props.bg ? props.bg : "#FA4354"}
           size={props?.size ? props.size : "md"}
-          w={props.width ? props.width : "100%"}
-          fontSize={"15px"}
+          w={props.width ? props.width : "120%"}
+          fontSize={"12px"}
           _hover={{ bg: "rgba(250, 67, 84, 0.5)" }}
           _active={{
             bg: "#FA4354",
@@ -27,6 +27,7 @@ function CustomButton(props) {
           _focus={{
             boxShadow: "0 0 0 5px rgba(0, 0, 0, 0.5)",
           }}
+          fontFamily={`CustomFontBold, Matter-Bold`}
           onClick={onOpen}
           style={props.style}
           textAlign={"center"}

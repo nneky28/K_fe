@@ -37,6 +37,7 @@ function CustomModal({ isOpen, onClose, text }) {
     marginTop: "10%",
     fontSize: "13px",
   };
+
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />

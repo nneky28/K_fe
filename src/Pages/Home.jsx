@@ -13,8 +13,10 @@ function Home() {
     <>
       <Box
         bgGradient="linear(to-tl, #060809 0%,  rgba(6, 8, 9, 0.6),#060809)"
-        width={{ base: "100%", md: "100%" }}
-        overflow={{ base: "hidden", md: "hidden" }}
+        width={"100%"}
+        overflow={"hidden"}
+        // h={"100%"}
+        bg="black"
       >
         <Navbar />
         <Hero />

@@ -32,7 +32,12 @@ function Navbar() {
       p={4}
       display="flex"
       flexDirection="row"
-      justifyContent={["center", "space-between"]}
+      justifyContent={{
+        base: "center",
+        sm: "center",
+        md: "space-between",
+        lg: "space-between",
+      }}
       px={["1%", "10%"]}
       position="fixed"
       top="0"
@@ -40,7 +45,7 @@ function Navbar() {
       style={navbarStyle}
     >
       <Image src="./logo.svg" style={{ width: "100px", height: "23px" }} />
-      <Box display={["none", "flex"]}>
+      <Box display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}>
         <CustomButton
           bg="transparent"
           style={{

@@ -13,32 +13,58 @@ import CustomButton from "./CustomButton";
 export default function Footer() {
   const today = new Date();
   return (
-    <Box pos={"relative"}>
-      <Box pos={"relative"} h={["30vh", "50vh"]}>
+    <Box pos={"relative"} bg="#060809">
+      <Box
+        pos={"relative"}
+        h={{ base: "30vh", md: "30vh", xl: "50vh" }}
+        overflow={"hidden"}
+      >
         <Center px={[4, 0]}>
           <Heading
             color={"white"}
-            fontSize={["22px", "22px"]}
+            fontSize={{
+              base: "22px",
+              md: "33px",
+              lg: "32px",
+              xl: "28px",
+              sm: "25px",
+            }}
+            fontFamily={"CustomFont, Matter-regular"}
             textAlign={"center"}
           >
             Get ready to redefine your shopping experience.
           </Heading>
         </Center>
         <Center mt={5} position={"relative"}>
-          <Text color={"white"} fontSize={["12px", "14px"]} px={4}>
+          <Text
+            color={"white"}
+            fontSize={{
+              base: "13px",
+              sm: "14px",
+              md: "15px",
+              lg: "14.5px",
+              xl: "15px",
+              "2xl": "17px",
+            }}
+            py={2}
+            px={{ sm: 2, base: 2, lg: 6, xl: 12 }}
+            textAlign={"center"}
+            w={{ base: "100%", sm: "100%", xl: "50%", md: "70%", "2xl": "50%" }}
+          >
             Join our waitlist now and secure your spot as one of the first to
+            experience the revolutionary live shopping app when it launches.
           </Text>
         </Center>
-        <Center position={"relative"}>
+        {/* <Center position={"relative"}>
           <Text color={"white"} fontSize={["12px", "14px"]} px={4}>
             experience the revolutionary live shopping app when it
           </Text>
-        </Center>
-        <Center position={"relative"}>
+        </Center> */}
+        {/* <Center position={"relative"}>
           <Text color={"white"} fontSize={["12px", "14px"]}>
             launches.
           </Text>
-        </Center>
+        </Center> */}
 
         <Center mt={8} position={"relative"} display={["none", "flex"]}>
           <CustomButton />

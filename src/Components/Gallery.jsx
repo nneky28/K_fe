@@ -59,14 +59,8 @@ function Gallery() {
 
   const rgbaGradientColor = `rgba(${gradientColor.join(", ")})`;
 
-  const gradientStyle = {
-    "--gradient-color": `${rgbaGradientColor}, 1), ${rgbaGradientColor}, 0)`,
-  };
-
   return (
-    <Box
-    // bgGradient="linear(to-tl, #060809 0%,  rgba(6, 8, 9, 0.6),#060809)"
-    >
+    <Box w={"100%"} h={"100%"}>
       <Center>
         <Image
           src="./discover.png"
@@ -75,50 +69,48 @@ function Gallery() {
             marginTop: "10%",
             marginBottom: "1%",
           }}
-          w={["60vw", "30vw"]}
+          w={{ base: "60%", sm: "45%", md: "53%", lg: "30%", "2xl": "28%" }}
         />
       </Center>
-      <Center p={[2, 0]}>
-        <Box w={["90%", "30%"]}>
-          <Text color={"white"} fontSize={["12px", "14.4px"]}>
-            Discover a secure and delightful shopping experience with live
-            video, while enjoying exclusive discounts on everything
-          </Text>
-        </Box>
-      </Center>
       <Center>
-        <Text color={"white"} fontSize={["12px", "14.4px"]}>
-          you love.
-        </Text>
+        <Center w={{ base: "90%", md: "60%", lg: "32%", "2xl": "29%" }}>
+          <Text
+            color={"white"}
+            px={{ base: 10, sm: 10, md: 2, lg: 2, "2xl": 2 }}
+            textAlign={"center"}
+            fontSize={{
+              base: "12px",
+              sm: "10px",
+              md: "14.4px",
+              lg: "14px",
+              "2xl": "20px",
+            }}
+          >
+            Discover a secure and delightful shopping experience with live
+            video, while enjoying exclusive discounts on everything you love.
+          </Text>
+        </Center>
       </Center>
 
       <Box
-        mt={["15%", "18%", , "7%", "7%"]}
-        h={["60vh", "75vh"]}
+        mt={{ base: "15%", sm: "5%", md: "5%", lg: "7%", "2xl": "7%" }}
         pos={"relative"}
       >
-        <Box
-          boxShadow="dark-lg"
-          p={["0", "10"]}
-          rounded="full"
-          // bg=" #060809"
-          // bg="#1E1E1E"
-          bg="black"
-          h={"80vh"}
-        >
+        <Box boxShadow="dark-lg" p={["0", "10"]} rounded="full" bg="black">
           <Flex gap={3} zIndex={0} position={"relative"}>
-            <Center w={["100%", "85%"]} ms={["0", "7%"]} mt={4}>
+            <Center w={["100%", "100%", "md%", "85%"]} ms={["0", "7%"]} mt={4}>
               <Marquee
                 autoFill={true}
                 gradient={true}
                 gradientWidth={200}
                 gradientColor={[0, 0, 0.9]}
+                speed={8}
               >
                 {images.map((item, index) => (
                   <Box key={index}>
                     <Image
                       src={item.img}
-                      boxSize={"120px"}
+                      boxSize={"100px"}
                       objectFit={"contain"}
                       style={{ marginRight: "10%" }}
                     />
@@ -136,13 +128,13 @@ function Gallery() {
                 gradientWidth={200}
                 gradientColor={[0, 0, 0.9]}
                 direction="right"
-                speed={8}
+                speed={9}
               >
                 {images1.map((item, index) => (
                   <Box key={index}>
                     <Image
                       src={item.img}
-                      boxSize={"120px"}
+                      boxSize={"100px"}
                       objectFit={"contain"}
                       style={{ marginRight: "10%", marginTop: "20px" }}
                     />
@@ -152,18 +144,19 @@ function Gallery() {
             </Center>
           </Flex>
           <Flex gap={3} zIndex={0} position={"relative"}>
-            <Center w={["100%", "85%"]} ms={["0", "7%"]} mb={4}>
+            <Center w={["100%", "100%", "md%", "85%"]} ms={["0", "7%"]} mb={4}>
               <Marquee
                 gradient={true}
                 gradientWidth={200}
                 gradientColor={[0, 0, 0.9]}
                 autoFill={true}
+                speed={9}
               >
                 {images2.map((item, index) => (
                   <Box key={index}>
                     <Image
                       src={item.img}
-                      boxSize={"120px"}
+                      boxSize={"100px"}
                       objectFit={"contain"}
                       style={{ marginRight: "10%", marginTop: "20px" }}
                     />
@@ -174,14 +167,16 @@ function Gallery() {
           </Flex>
         </Box>
 
-        <ReactPlayer
-          url="https://res.cloudinary.com/duprallvm/video/upload/v1685626774/Screen_Recording_2023-06-01_at_14.37.24_epfydv.mov"
-          playing={true}
-          loop={true}
-          width="65%"
-          height="120%"
-          style={{ position: "absolute", left: "18%", bottom: -50 }}
-        />
+        <Center>
+          <ReactPlayer
+            url="https://res.cloudinary.com/duprallvm/video/upload/v1685626774/Screen_Recording_2023-06-01_at_14.37.24_epfydv.mov"
+            playing={true}
+            loop={true}
+            width="100%"
+            height="100%"
+            style={{ position: "absolute", top: 1 }}
+          />
+        </Center>
 
         {/* <Box pos={"absolute"} top={0}>
           <Image src="./people/bgG.png" />
