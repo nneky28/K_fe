@@ -47,14 +47,13 @@ function Shop() {
           </Box>
           <Box
             mt={[0, 40]}
-            // h={"50%"}
             w={{
               base: "470%",
               md: "360%",
               lg: "265%",
               xl: "209%",
               "2xl": "147%",
-              sm: "394%",
+              sm: "455%",
             }}
           >
             <Image src={woman} objectFit={"cover"} ms={["0%", "5%"]} />

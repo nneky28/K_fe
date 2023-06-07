@@ -19,6 +19,7 @@
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.0",
     "react-icons": "^4.9.0",
+    "react-image-webp": "^0.8.0",
     "react-player": "^2.12.0"
   },
   "devDependencies": {

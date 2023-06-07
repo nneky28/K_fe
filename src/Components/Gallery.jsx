@@ -60,7 +60,7 @@ function Gallery() {
   const rgbaGradientColor = `rgba(${gradientColor.join(", ")})`;
 
   return (
-    <Box w={"100%"} h={"100%"}>
+    <Box w={"100%"}>
       <Center>
         <Image
           src="./discover.png"
@@ -69,20 +69,20 @@ function Gallery() {
             marginTop: "10%",
             marginBottom: "1%",
           }}
-          w={{ base: "60%", sm: "45%", md: "53%", lg: "30%", "2xl": "28%" }}
+          w={{ base: "60%", sm: "50%", md: "53%", lg: "31%", "2xl": "28%" }}
         />
       </Center>
       <Center>
         <Center w={{ base: "90%", md: "60%", lg: "32%", "2xl": "29%" }}>
           <Text
             color={"white"}
-            px={{ base: 10, sm: 10, md: 2, lg: 2, "2xl": 2 }}
+            px={{ base: 10, sm: 10, md: 2, lg: 0, "2xl": 2 }}
             textAlign={"center"}
             fontSize={{
               base: "12px",
               sm: "10px",
               md: "14.4px",
-              lg: "14px",
+              lg: "15px",
               "2xl": "20px",
             }}
           >

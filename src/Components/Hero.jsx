@@ -36,7 +36,7 @@ function Hero() {
         }}
         overflow={"hidden"}
         h={"70%"}
-        w={{ base: "100%", sm: "100%", md: "100%", lg: "100%", "2xl": "100%" }}
+        w={{ base: "104%", sm: "100%", md: "100%", lg: "100%", "2xl": "100%" }}
         p={[2, 6, 6, 10, 10]}
         ms={{ base: "0", sm: "0", md: "7%", lg: "7%", "2xl": "8%" }}
         mt={["1%", "6%"]}
@@ -44,22 +44,29 @@ function Hero() {
         <Box
           pos={"relative"}
           order={{ base: 2, sm: 2, md: 1, lg: 1, "2xl": 1 }}
-          ms={{ base: "1%", sm: "1%", md: "0", lg: "0", "2xl": "none" }}
+          ms={{ base: "2%", sm: "2%", md: "1%", lg: "0", "2xl": "none" }}
         >
           <Box
             display={"flex"}
             flexDirection={"row"}
             boxShadow="lg"
-            mt={{ sm: "8%", base: "8%", md: "10%", lg: "10%" }}
+            mt={{
+              sm: "8%",
+              base: "8%",
+              md: "10%",
+              lg: "10%",
+              "2xl": "10%",
+              xl: "10%",
+            }}
           >
             <Heading
               as="h1"
               fontSize={{
-                base: "40px",
-                md: "33px",
-                lg: "50px",
+                base: "30px",
+                md: "30px",
+                lg: "40px",
                 xl: "58px",
-                sm: "35px",
+                sm: "33px",
               }}
               noOfLines={1}
               color={"white"}
@@ -75,25 +82,25 @@ function Hero() {
               <Image
                 src={video}
                 objectFit="contain"
-                w={["158px", "135px", "160px", "175px", "205px"]}
-                h={{ base: "60px", sm: "60px", md: "60px", lg: "70px" }}
-                mt={3}
+                w={["160px", "150px", "160px", "175px", "205px"]}
+                h={{ base: "50px", sm: "50px", md: "60px", lg: "70px" }}
+                mt={{ sm: 4, base: 4, lg: 3, xl: 3 }}
               />
               <Heading
                 position="absolute"
                 bottom="1"
-                top={{ base: "none", sm: "6", md: "5", lg: "5" }}
+                top={{ base: "none", sm: "5", md: "7", lg: "5" }}
                 right={["0", "5"]}
                 px="1"
                 color="#FFEBB3"
                 as="h1"
                 textAlign={"center"}
                 fontSize={{
-                  base: "40px",
+                  base: "30px",
                   md: "35px",
                   lg: "46px",
                   xl: "53px",
-                  sm: "32px",
+                  sm: "34px",
                 }}
                 noOfLines={1}
                 brightness="90%"
@@ -109,11 +116,11 @@ function Hero() {
             noOfLines={1}
             color={"white"}
             fontSize={{
-              base: "40px",
+              base: "30px",
               md: "33px",
               lg: "50px",
               xl: "58px",
-              sm: "35px",
+              sm: "33px",
             }}
           >
             with Kommerce
@@ -122,7 +129,7 @@ function Hero() {
             mt={5}
             w={{
               base: "100%",
-              sm: "96%",
+              sm: "100%",
               md: "100%",
               "2xl": "67%",
               lg: "100%",
@@ -132,10 +139,10 @@ function Hero() {
             <Text
               color={"white"}
               fontSize={{
-                base: "13px",
-                sm: "13px",
+                base: "14px",
+                sm: "14px",
                 md: "14px",
-                lg: "14.5px",
+                lg: "14px",
                 "2xl": "17px",
                 xl: "15.5px",
               }}
@@ -182,7 +189,13 @@ function Hero() {
           mt={{ sm: "20%", base: "20%", md: "10%", lg: "0" }}
           order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
           ms={{ base: "30%", sm: "25%", md: "0", lg: "0", "2xl": "none" }}
-          mb={{ base: "-18%", sm: "-20%" }}
+          mb={{
+            base: "-20%",
+            sm: "-20%",
+            lg: "-30%",
+            xl: "-40%",
+            "2xl": "-40%",
+          }}
         >
           <Flex filter="auto" brightness="90%" pos={"relative"}>
             <Box
@@ -207,7 +220,7 @@ function Hero() {
             </Box>
             <Box
               order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
-              w={{ sm: "70%", lg: "65%", md: "60%", xl: "70%" }}
+              w={{ sm: "70%", lg: "65%", md: "60%", xl: "70%", base: "70%" }}
               // pos={"relative"}
             >
               <ReactPlayer
@@ -220,15 +233,15 @@ function Hero() {
 
               <Box
                 pos={"absolute"}
-                h={{ sm: "230px", xl: "330px" }}
+                h={{ sm: "275px", xl: "330px", base: "290px" }}
                 w={"88%"}
                 top={{
-                  base: "25%",
-                  sm: "14%",
-                  md: "54%",
+                  base: "12%",
+                  // sm: "1%",
+                  md: "48%",
                   lg: "52%",
                   "2xl": "56%",
-                  xl: "58=6%",
+                  xl: "56%",
                 }}
                 left={6.1}
                 bgGradient="linear(to-t, black 7.81%, black 54.57%,rgba(6, 8, 9, 0)  100%)"

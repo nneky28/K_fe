@@ -7,19 +7,19 @@ function Experience() {
   return (
     <Box
       h={{
-        base: "17vh",
+        base: "22vh",
         md: "35vh",
         lg: "20vh",
-        xl: "78vh",
-        sm: "12vh",
-        "2xl": "35vh",
+        xl: "80vh",
+        sm: "22vh",
+        "2xl": "45vh",
       }}
       marginTop={{
-        sm: "80%",
-        base: "150%",
+        sm: "50%",
+        base: "100%",
         md: "40%",
         lg: "40%",
-        xl: "10%",
+        xl: "30%",
         "2xl": "10%",
       }}
       // w={"100%"}
@@ -48,7 +48,7 @@ function Experience() {
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
           backgroundSize={"215px 270px"}
-          height={{ base: "60vh", lg: "50vh", xl: "65vh", "2xl": "65vh" }}
+          height={{ base: "40vh", lg: "50vh", xl: "65vh", "2xl": "65vh" }}
           alignItems="center"
           justifyContent="center"
           position="absolute"

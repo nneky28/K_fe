@@ -1,4 +1,4 @@
-import { Box, Button, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, useDisclosure, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import CustomModal from "./CustomModal";
 
@@ -12,8 +12,9 @@ function CustomButton(props) {
 
   return (
     <>
-      <Box>
-        <Button
+      <Box alignContent={"center"}>
+        <Text
+          as="button"
           color="#FFFFFF"
           bg={props.bg ? props.bg : "#FA4354"}
           size={props?.size ? props.size : "md"}
@@ -30,11 +31,12 @@ function CustomButton(props) {
           fontFamily={`CustomFontBold, Matter-Bold`}
           onClick={onOpen}
           style={props.style}
-          textAlign={"center"}
-          alignItems={"center"}
+          textAlign="center"
+          p={2.5}
+          borderRadius={6}
         >
-          Join our waitlist
-        </Button>
+          Get early access
+        </Text>
       </Box>
 
       {isOpen && (
