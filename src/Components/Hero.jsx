@@ -64,7 +64,7 @@ function Hero() {
               fontSize={{
                 base: "32px",
                 md: "30px",
-                lg: "40px",
+                lg: "42px",
                 xl: "58px",
                 sm: "32px",
               }}
@@ -83,7 +83,6 @@ function Hero() {
               <Image
                 src={video}
                 objectFit="contain"
-                // w={["90%", "90%", "160px", "175px", "90%"]}
                 h={{
                   base: "52px",
                   sm: "50px",
@@ -91,15 +90,15 @@ function Hero() {
                   lg: "70px",
                   // xl: "40%",
                 }}
-                mt={{ sm: 4, base: 4, lg: 3, xl: 3 }}
+                mt={{ md: 3, lg: 3, xl: 3 }}
               />
               <Heading
                 position="absolute"
                 bottom="1"
                 top={{
-                  base: "4",
-                  sm: "4",
-                  md: "5",
+                  base: "0",
+                  sm: "0",
+                  md: "4",
                   lg: "5",
                   "2xl": 2,
                   xl: "3",
@@ -119,7 +118,7 @@ function Hero() {
                 fontSize={{
                   base: "32px",
                   md: "39px",
-                  lg: "48px",
+                  lg: "53px",
                   xl: "60px",
                   sm: "39px",
                   "2xl": "61px",
@@ -134,13 +133,14 @@ function Hero() {
             </Box>
           </Box>
           <Heading
+            w={"100%"}
             as="h1"
             noOfLines={1}
             color={"white"}
             fontSize={{
               base: "32px",
               md: "33px",
-              lg: "50px",
+              lg: "44px",
               xl: "58px",
               sm: "32px",
             }}
