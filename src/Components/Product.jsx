@@ -17,9 +17,9 @@ import CustomButton from "./CustomButton";
 function Product() {
   return (
     <>
-      <Box display={["flex", "flex", "none"]} mt={10} px={6}>
+      <Center display={["flex", "flex", "none"]} mt={10} px={6}>
         <Image src="./card.svg" objectFit={"contain"} />
-      </Box>
+      </Center>
       <Center
         px={{ base: "1%", sm: "2%", md: "4%", lg: "10%" }}
         w={{

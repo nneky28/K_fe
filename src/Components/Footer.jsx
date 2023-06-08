@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <Box pos={"relative"} bg="#060809">
       <Box
-        h={{ base: "25vh", md: "20vh", xl: "45vh", sm: "12vh", lg: "15vh" }}
+        h={{ base: "25vh", md: "90vh", xl: "45vh", sm: "100vh", lg: "85vh" }}
         overflow={"hidden"}
       >
         <Center px={[4, 0]} pos={"relative"}>
@@ -75,13 +75,17 @@ export default function Footer() {
         justifyContent="space-between"
         px={["6%", "10%", "10%", "10%", "10%"]}
         overflow={"hidden"}
-        mb={["2vh", "2vh", "0", "0", "0"]}
+        mb={["12vh", "12vh", "0", "0", "0"]}
       >
         <Flex gap={[3, 8, 8, 8, 8]}>
           <Image src="./insta.png" boxSize={"20px"} />
           <Image src="./twitter.png" boxSize={"20px"} />
         </Flex>
-        <Text color="white" fontSize={"12px"}>
+        <Text
+          color="white"
+          fontSize={"13px"}
+          fontFamily={`CustomFont, MatterSQ-Regular`}
+        >
           Copyright {today.getFullYear()}
         </Text>
       </Box>
@@ -91,10 +95,9 @@ export default function Footer() {
         position={"fixed"}
         bottom={"0"}
         zIndex="20"
-        // overflow="hidden"
         w={"100%"}
       >
-        <CustomButton width={"100vw"} p={5} mobile />
+        <CustomButton width={"100VW"} p={3} mobile />
       </Box>
     </Box>
   );

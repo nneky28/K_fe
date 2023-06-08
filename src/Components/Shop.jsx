@@ -8,12 +8,15 @@ import {
   Stack,
   Text,
   SimpleGrid,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
 import { family, girls, woman } from "../assets/images";
 import CustomButton from "./CustomButton";
 // Flex
 function Shop() {
+  const [isSmallerThanMd] = useMediaQuery("(max-width: 767px)");
+
   return (
     <Center pos={"relative"}>
       <SimpleGrid
@@ -50,8 +53,8 @@ function Shop() {
               w={{
                 "2xl": "130vw",
                 xl: "215vw",
-                lg: "205vh",
-                md: "140vh",
+                lg: "865vh",
+                md: "512vw",
                 base: "80%",
                 sm: "400vw",
               }}
@@ -66,7 +69,7 @@ function Shop() {
                 md: "444vw",
                 sm: "320vw",
                 xl: "188vw",
-                lg: "460vw",
+                lg: "200vw",
                 "2xl": "107vw",
               }}
             />
@@ -74,7 +77,14 @@ function Shop() {
         </Flex>
 
         <Box
-          mt={{ sm: 2, base: 2, md: "40%", lg: "35%", xl: "30%", "2xl": "25%" }}
+          mt={{
+            sm: 12,
+            base: 12,
+            md: "40%",
+            lg: "35%",
+            xl: "30%",
+            "2xl": "25%",
+          }}
         >
           <Heading
             color={"#FFFFFF"}
@@ -82,32 +92,50 @@ function Shop() {
             fontSize={{
               base: "20px",
               sm: "20px",
-              md: "30px",
-              lg: "43px",
+              md: "25px",
+              lg: "33px",
               xl: "45px",
               "2xl": "60px",
             }}
+            ms={{
+              sm: 2,
+              base: 2,
+              lg: 0,
+              xl: 0,
+              "2xl": 0,
+              md: 0,
+            }}
+            textAlign={isSmallerThanMd ? "center" : "flex-start"}
           >
-            Shop products you
+            Shop products you love
           </Heading>
           <Heading
             color={"#FFFFFF"}
             fontSize={{
               base: "20px",
               sm: "20px",
-              md: "30px",
-              lg: "35px",
+              md: "25px",
+              lg: "33px",
               xl: "45px",
               "2xl": "60px",
             }}
+            ms={{
+              sm: 2,
+              base: 2,
+              lg: 0,
+              xl: 0,
+              "2xl": 0,
+              md: 0,
+            }}
+            textAlign={isSmallerThanMd ? "center" : "flex-start"}
           >
-            love stress-free{" "}
+            stress-free{" "}
             <span role="img" aria-label="Heart">
               ❤️
             </span>
           </Heading>
-          <Box
-            w={40}
+          <Center
+            // w={40}
             mt={{ sm: 2, base: 2, md: 3, lg: "3%", xl: "4%", "2xl": "3%" }}
           >
             <Text
@@ -120,8 +148,9 @@ function Shop() {
                 "2xl": "17px",
               }}
               color={"#B4BECB"}
-              w={{ base: 250, md: 335, lg: 460, xl: 520, sm: 255 }}
+              w={{ base: 250, md: 435, lg: 460, xl: 520, sm: 405, "2xl": 933 }}
               pr={{ base: 1 }}
+              textAlign={isSmallerThanMd ? "center" : "flex-start"}
               fontFamily={`CustomFont, MatterSQ-Regular`}
             >
               Experience interactive live shopping events with expert sellers,
@@ -129,7 +158,7 @@ function Shop() {
               shoppers, shop conveniently from home, and enjoy secure payment
               processing.
             </Text>
-          </Box>
+          </Center>
           <Box
             mt={{ sm: 2, base: 2, md: 2, lg: "3%", "2xl": "3%" }}
             display={["none", "none", "none", "flex"]}

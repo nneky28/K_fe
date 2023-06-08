@@ -22,7 +22,7 @@ function Gallery() {
     { id: 6, img: "./people/6.png" },
     { id: 7, img: "./people/7.png" },
     { id: 8, img: "./people/8.png" },
-    { id: 9, img: "./people/9.png" },
+    // { id: 9, img: "./people/9.png" },
   ];
 
   const images1 = [
@@ -87,6 +87,7 @@ function Gallery() {
               "2xl": "20px",
               xl: "18px",
             }}
+            w={{ sm: 317, base: 317, md: 500, xl: 500, "2xl": 500 }}
             fontFamily={`CustomFont, MatterSQ-Regular`}
           >
             Discover a secure and delightful shopping experience with live

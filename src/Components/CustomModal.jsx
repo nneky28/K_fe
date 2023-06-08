@@ -1,11 +1,5 @@
 import {
-  Modal,
   Text,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalCloseButton,
-  ModalBody,
   Input,
   Radio,
   RadioGroup,
@@ -19,6 +13,7 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 
@@ -73,9 +68,11 @@ function CustomModal({ isOpen, onClose, text }) {
     }
   }, []);
 
+  const [isSmallerThanMd] = useMediaQuery("(max-width: 767px)");
+
   const modalStyle = {
     border: "0.1 solid #63768D",
-    marginRight: "6%",
+    marginRight: isSmallerThanMd ? "auto" : "6%",
     marginTop: "5%",
     borderRadius: 5,
   };
@@ -98,7 +95,7 @@ function CustomModal({ isOpen, onClose, text }) {
       <DrawerContent
         style={modalStyle}
         bg="#1B1C20"
-        h={{ xl: "50vh", "2xl": "33vh", md: "30vh", lg: "12vh", sm: "12vh" }}
+        h={{ xl: "50vh", "2xl": "33vh", md: "30vh", lg: "12vh", sm: "90%" }}
       >
         <DrawerHeader color={"#FFFFFF"} textAlign={"center"} fontSize={"15px"}>
           Join our waitlist

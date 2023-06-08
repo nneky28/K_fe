@@ -7,6 +7,7 @@ import {
   Heading,
   Flex,
   Center,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
 import { overlay, video } from "../assets/images";
@@ -17,11 +18,8 @@ function Hero() {
   const [value, setValue] = React.useState("");
 
   React.useEffect(() => localStorage.setItem("address", value), [value]);
+  const [isSmallerThanMd] = useMediaQuery("(max-width: 767px)");
 
-  const divStyles = {
-    filter: "drop-shadow(2px 3px 10px crimson)",
-    height: "20%",
-  };
   return (
     <Box justifyContent={"center"} alignSelf={"center"} bg="blackAlpha.900">
       <SimpleGrid
@@ -37,19 +35,19 @@ function Hero() {
         overflow={"hidden"}
         h={"70%"}
         w={{ base: "100%", sm: "100%", md: "100%", lg: "100%", "2xl": "100%" }}
-        // p={[2, 6, 6, 10, 10]}
         ms={{ base: "0", sm: "0", md: "7%", lg: "6%", "2xl": "6%" }}
         mt={{ sm: "1%", md: "20%", xl: "6%" }}
       >
         <Box
           pos={"relative"}
           order={{ base: 2, sm: 2, md: 1, lg: 1, "2xl": 1 }}
-          ms={{ base: "2%", sm: "5%", md: "1%", lg: "0", "2xl": "none" }}
+          ms={{ base: "0", sm: "0", md: "1%", lg: "0", "2xl": "none" }}
         >
           <Box
             display={"flex"}
             flexDirection={"row"}
             boxShadow="lg"
+            alignItems={"center"}
             mt={{
               sm: "0",
               base: "0",
@@ -82,10 +80,11 @@ function Hero() {
             >
               Shop on
             </Heading>
-            <Box display={["flex", "flex", "none"]}>
-              <Image src="./mobile.svg" objectFit="contain" />
-            </Box>
-            <Box position="relative" display={["none", "none", "inline-block"]}>
+
+            <Center
+              position="relative"
+              display={["none", "none", "inline-block"]}
+            >
               <Image
                 src={video}
                 objectFit="contain"
@@ -137,7 +136,7 @@ function Hero() {
               >
                 video
               </Heading>
-            </Box>
+            </Center>
           </Box>
           <Heading
             w={"100%"}
@@ -156,16 +155,22 @@ function Hero() {
             with Kommerce
           </Heading>
           <Box
+            display={["flex", "flex", "none", "none", "none"]}
+            justifyContent="center"
+            flexDirection={"row"}
+          >
+            <Center>
+              <Image src="./mobile.svg" objectFit="center" />
+            </Center>
+          </Box>
+          <Center
             mt={5}
             w={{
-              base: "100%",
-              sm: "85vw",
               md: "100%",
               "2xl": "95%",
               lg: "100%",
               xl: "100%",
             }}
-            alignItems={"center"}
           >
             <Text
               color={"white"}
@@ -177,13 +182,23 @@ function Hero() {
                 "2xl": "20px",
                 xl: "20px",
               }}
+              w={{
+                sm: 338,
+                base: 338,
+                md: 533,
+                lg: 533,
+                xl: 533,
+                "2xl": 933,
+              }}
+              pos={"relative"}
               fontFamily={`CustomFont, MatterSQ-Regular`}
+              textAlign={isSmallerThanMd ? "center" : "flex-start"}
             >
               Get early access to experience an interactive, immersive live
               shopping platform where you experience exclusive deals, and
               real-time interactions with your favourite brands.
             </Text>
-          </Box>
+          </Center>
           <Box display={["none", "none", "none", "flex"]} mt={8} w={"100%"}>
             <Input
               variant="outline"
@@ -207,14 +222,11 @@ function Hero() {
           backgroundImage="url('./shadow.png')"
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
-          backgroundSize={"900px 400px"}
-          justifyContent={"center"}
-          alignItems={"center"}
+          backgroundSize={"380px"}
           pos={"relative"}
-          display={"flex"}
           mt={{ sm: "20%", base: "20%", md: "10%", lg: "0" }}
           order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
-          ms={{ base: "24%", sm: "24%", md: "0", lg: "0", "2xl": "none" }}
+          ms={{ base: "24%", sm: "24%", md: "0", lg: "0", "2xl": "0" }}
         >
           <Flex filter="auto" brightness="90%" pos={"relative"}>
             <Box
@@ -222,7 +234,7 @@ function Hero() {
                 sm: "20%",
                 base: "20%",
                 md: "60%",
-                lg: "60%",
+                lg: "70%",
                 "2xl": "55%",
                 xl: "70%",
               }}
@@ -241,13 +253,12 @@ function Hero() {
               order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
               w={{
                 sm: "75%",
-                lg: "60%",
-                md: "60%",
+                lg: "80%",
+                md: "80%",
                 xl: "75%",
                 base: "75%",
                 "2xl": "75%",
               }}
-              // pos={"relative"}
             >
               <ReactPlayer
                 url="https://res.cloudinary.com/duprallvm/video/upload/v1685626517/Screen_Recording_2023-06-01_at_10.53.14_c1wzv9.mov"
@@ -255,18 +266,15 @@ function Hero() {
                 loop={true}
                 width="85%"
                 height="95%"
-                // width="387.76px"
-                // height="686.61px"
               />
 
               <Box
                 pos={"absolute"}
                 h={{
-                  // sm: "18%",
+                  sm: "27%",
                   xl: "330px",
                   base: "18%",
-                  // "2xl": "330%",
-                  md: "185px",
+                  md: "285px",
                 }}
                 w={"88%"}
                 top={{
@@ -274,7 +282,7 @@ function Hero() {
                   sm: "72%",
                   md: "48%",
                   lg: "52%",
-                  "2xl": "56%",
+                  "2xl": "66%",
                   xl: "54%",
                 }}
                 left={6.1}
