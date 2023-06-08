@@ -38,20 +38,20 @@ function Navbar() {
         md: "space-between",
         lg: "space-between",
       }}
-      px={["1%", "10%"]}
+      px={["1%", "6%"]}
       position="fixed"
       top="0"
       zIndex="10"
       style={navbarStyle}
     >
-      <Image src="./logo.svg" style={{ width: "100px", height: "23px" }} />
+      <Image src="./logo.svg" style={{ width: "130px", height: "23px" }} />
       <Box display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}>
         <CustomButton
           bg="transparent"
           width={{ md: "18vw", xl: "14vw" }}
           style={{
             border: "0.1px solid #FA4354",
-            fontSize: "12px",
+            fontSize: "13px",
           }}
         />
       </Box>

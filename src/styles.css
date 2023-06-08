@@ -1,12 +1,15 @@
 @font-face {
   font-family: 'CustomFont';
-  src: url('./fonts/Matter-Regular.woff') format('woff');
+  src: url('./fonts/MatterSQ-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'CustomFontBold';
-  src: url('./fonts/MatterSQ-Bold.woff') format('woff');
+  src: url('./fonts/MatterSQ-SemiBold.woff') format('woff');
 }
-
+@font-face {
+  font-family: 'CustomFontMedium';
+  src: url('./fonts/MatterSQ-Medium.woff') format('woff');
+}
 #root {
     font-family:  'CustomFont';
     background-color: black;

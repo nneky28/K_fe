@@ -15,22 +15,21 @@ export default function Footer() {
   return (
     <Box pos={"relative"} bg="#060809">
       <Box
-        pos={"relative"}
-        h={{ base: "25vh", md: "30vh", xl: "45vh", sm: "25vh", lg: "40vh" }}
+        h={{ base: "25vh", md: "20vh", xl: "45vh", sm: "12vh", lg: "15vh" }}
         overflow={"hidden"}
       >
-        <Center px={[4, 0]}>
+        <Center px={[4, 0]} pos={"relative"}>
           <Heading
             color={"white"}
             fontSize={{
-              base: "22px",
-              md: "33px",
-              lg: "32px",
+              base: "24px",
+              md: "28px",
+              lg: "28px",
               xl: "28px",
               sm: "24px",
             }}
             px={{ lg: 6, xl: 12 }}
-            fontFamily={"CustomFont, Matter-regular"}
+            fontFamily={"CustomFontMedium, MatterSQ-Medium"}
             textAlign={"center"}
             w={{ base: "100%", sm: "100%", xl: "90%", md: "80%", "2xl": "50%" }}
           >
@@ -41,13 +40,14 @@ export default function Footer() {
           <Text
             color={"white"}
             fontSize={{
-              base: "13px",
-              sm: "14px",
+              base: "15px",
+              sm: "15px",
               md: "14px",
-              lg: "14.5px",
-              xl: "15px",
-              "2xl": "17px",
+              lg: "15px",
+              xl: "14px",
+              "2xl": "16px",
             }}
+            fontFamily={`CustomFont, MatterSQ-Regular`}
             py={2}
             px={{ sm: 30, base: 12, lg: 12, xl: 12, md: 6 }}
             textAlign={"center"}
@@ -74,20 +74,12 @@ export default function Footer() {
         flexDirection="row"
         justifyContent="space-between"
         px={["6%", "10%", "10%", "10%", "10%"]}
-        position={{
-          sm: "relative",
-          base: "relative",
-          md: "fixed",
-          lg: "fixed",
-        }}
-        bottom={{ sm: "1", base: "2", md: "0", lg: "0" }}
-        zIndex="20"
-        mb={["5vh", "5vh", "0", "0", "0"]}
+        overflow={"hidden"}
+        mb={["2vh", "2vh", "0", "0", "0"]}
       >
         <Flex gap={[3, 8, 8, 8, 8]}>
           <Image src="./insta.png" boxSize={"20px"} />
           <Image src="./twitter.png" boxSize={"20px"} />
-          <Image src="./fb.png" boxSize={"20px"} />
         </Flex>
         <Text color="white" fontSize={"12px"}>
           Copyright {today.getFullYear()}
@@ -102,7 +94,7 @@ export default function Footer() {
         // overflow="hidden"
         w={"100%"}
       >
-        <CustomButton width={"100vw"} p={5} />
+        <CustomButton width={"100vw"} p={5} mobile />
       </Box>
     </Box>
   );

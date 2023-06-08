@@ -18,13 +18,14 @@ function CustomButton(props) {
           color="#FFFFFF"
           bg={props.bg ? props.bg : "#FA4354"}
           w={props.width}
-          fontSize={"12px"}
-          fontFamily={`CustomFontBold, Matter-Bold`}
+          fontSize={"15px"}
+          fontFamily={`CustomFontMedium, MatterSQ-Medium`}
           onClick={onOpen}
           style={props.style}
           textAlign="center"
-          p={props?.p ? props?.p : 2.5}
-          borderRadius={6}
+          p={props?.p ? props?.p : 1.5}
+          h={props.height ? props.height : "45px"}
+          borderRadius={props?.mobile ? null : "8px"}
         >
           Get early access
         </Text>

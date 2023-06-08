@@ -22,7 +22,7 @@ function Shop() {
         ms={["0%", "5%"]}
         px={[4, "5%"]}
       >
-        <Flex gap={["4", "0", "2"]} w={["100%", "95%"]}>
+        <Flex gap={["4", "1", "2"]} w={["100%", "95%"]}>
           <Box mt={[10, 40]}>
             <Image
               src={girls}
@@ -30,13 +30,13 @@ function Shop() {
               ms={{
                 base: "18%",
                 sm: "20%",
-                md: "10%",
+                md: "11%",
                 lg: "20%",
-                xl: "10%",
-                "2xl": "30%",
+                xl: "9%",
+                "2xl": "15%",
               }}
               w={{
-                "2xl": "70%",
+                "2xl": "18vw",
                 xl: "19vw",
                 lg: "80%",
                 md: "18vw",
@@ -48,7 +48,7 @@ function Shop() {
               objectFit={"cover"}
               mt={[1, 2, 4, 4, 5]}
               w={{
-                "2xl": "70%",
+                "2xl": "130vw",
                 xl: "215vw",
                 lg: "205vh",
                 md: "140vh",
@@ -62,7 +62,13 @@ function Shop() {
               src={woman}
               objectFit={"contain"}
               ms={["0%", "5%"]}
-              w={{ md: "184vw", sm: "320vw", xl: "188vw", lg: "188vw" }}
+              w={{
+                md: "444vw",
+                sm: "320vw",
+                xl: "188vw",
+                lg: "460vw",
+                "2xl": "107vw",
+              }}
             />
           </Box>
         </Flex>
@@ -77,8 +83,8 @@ function Shop() {
               base: "20px",
               sm: "20px",
               md: "30px",
-              lg: "33px",
-              xl: "35px",
+              lg: "43px",
+              xl: "45px",
               "2xl": "60px",
             }}
           >
@@ -90,8 +96,8 @@ function Shop() {
               base: "20px",
               sm: "20px",
               md: "30px",
-              lg: "33px",
-              xl: "35px",
+              lg: "35px",
+              xl: "45px",
               "2xl": "60px",
             }}
           >
@@ -114,9 +120,9 @@ function Shop() {
                 "2xl": "17px",
               }}
               color={"#B4BECB"}
-              w={{ base: 320, md: 335, lg: 460, xl: 480, sm: 415 }}
-              pr={{ base: 10 }}
-              // w={[450, 315, 335, 460, 600]}
+              w={{ base: 250, md: 335, lg: 460, xl: 520, sm: 255 }}
+              pr={{ base: 1 }}
+              fontFamily={`CustomFont, MatterSQ-Regular`}
             >
               Experience interactive live shopping events with expert sellers,
               personalized recommendations, and Q&A. Connect with a community of

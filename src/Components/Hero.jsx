@@ -31,15 +31,15 @@ function Hero() {
           base: "0",
           lg: "20%",
           md: "20%",
-          "2xl": "10%",
-          xl: "10%",
+          "2xl": "20%",
+          xl: "20%",
         }}
         overflow={"hidden"}
         h={"70%"}
         w={{ base: "100%", sm: "100%", md: "100%", lg: "100%", "2xl": "100%" }}
-        p={[2, 6, 6, 10, 10]}
-        ms={{ base: "0", sm: "0", md: "7%", lg: "7%", "2xl": "8%" }}
-        mt={["1%", "6%"]}
+        // p={[2, 6, 6, 10, 10]}
+        ms={{ base: "0", sm: "0", md: "7%", lg: "6%", "2xl": "6%" }}
+        mt={{ sm: "1%", md: "20%", xl: "6%" }}
       >
         <Box
           pos={"relative"}
@@ -62,35 +62,41 @@ function Hero() {
             <Heading
               as="h1"
               fontSize={{
-                base: "32px",
+                base: "25px",
                 md: "30px",
-                lg: "42px",
-                xl: "58px",
-                sm: "32px",
+                lg: "50px",
+                xl: "60px",
+                sm: "25px",
+                "2xl": "60px",
               }}
+              fontFamily={`CustomFontBold, MatterSQ-SemiBold`}
               noOfLines={1}
               color={"white"}
               filter="grayscale(100%)"
               textShadow="1px 1px gray"
               brightness="90%"
-              mt={{ sm: 1, md: 6, lg: 7, xl: 4, "2xl": 3 }}
+              mt={{ sm: 2, md: 6, lg: 7, xl: 4, "2xl": 3 }}
               textAlign={"center"}
               pos={"relative"}
+              display={["none", "none", "flex", "inline-block", "inline-block"]}
             >
               Shop on
             </Heading>
-            <Box position="relative" display="inline-block">
+            <Box display={["flex", "flex", "none"]}>
+              <Image src="./mobile.svg" objectFit="contain" />
+            </Box>
+            <Box position="relative" display={["none", "none", "inline-block"]}>
               <Image
                 src={video}
                 objectFit="contain"
+                w={{ xl: "216px", "2xl": "216px" }}
                 h={{
                   base: "52px",
                   sm: "50px",
-                  md: "50px",
+                  md: "40px",
                   lg: "70px",
-                  // xl: "40%",
                 }}
-                mt={{ md: 3, lg: 3, xl: 3 }}
+                mt={{ md: 5, lg: 3, xl: 3 }}
               />
               <Heading
                 position="absolute"
@@ -98,9 +104,9 @@ function Hero() {
                 top={{
                   base: "0",
                   sm: "0",
-                  md: "4",
+                  md: "5",
                   lg: "5",
-                  "2xl": 2,
+                  "2xl": 3,
                   xl: "3",
                 }}
                 right={{
@@ -109,7 +115,7 @@ function Hero() {
                   md: "0",
                   lg: "1",
                   xl: "0",
-                  "2xl": "1",
+                  "2xl": "0",
                 }}
                 px="1"
                 color="#FFEBB3"
@@ -117,12 +123,13 @@ function Hero() {
                 textAlign={"center"}
                 fontSize={{
                   base: "32px",
-                  md: "39px",
-                  lg: "53px",
+                  md: "33px",
+                  lg: "60px",
                   xl: "60px",
-                  sm: "39px",
-                  "2xl": "61px",
+                  sm: "34px",
+                  "2xl": "60px",
                 }}
+                fontFamily={`CustomFontBold, MatterSQ-SemiBold`}
                 noOfLines={1}
                 brightness="90%"
                 // mt={2}
@@ -134,15 +141,16 @@ function Hero() {
           </Box>
           <Heading
             w={"100%"}
+            display={["none", "none", "flex"]}
             as="h1"
             noOfLines={1}
             color={"white"}
             fontSize={{
-              base: "32px",
+              sm: "28px",
               md: "33px",
               lg: "44px",
               xl: "58px",
-              sm: "32px",
+              sm: "28px",
             }}
           >
             with Kommerce
@@ -153,10 +161,11 @@ function Hero() {
               base: "100%",
               sm: "85vw",
               md: "100%",
-              "2xl": "67%",
+              "2xl": "95%",
               lg: "100%",
-              xl: "85%",
+              xl: "100%",
             }}
+            alignItems={"center"}
           >
             <Text
               color={"white"}
@@ -164,65 +173,48 @@ function Hero() {
                 base: "14px",
                 sm: "14px",
                 md: "14px",
-                lg: "14px",
-                "2xl": "19px",
-                xl: "15.5px",
+                lg: "20px",
+                "2xl": "20px",
+                xl: "20px",
               }}
-              // p={1}
+              fontFamily={`CustomFont, MatterSQ-Regular`}
             >
               Get early access to experience an interactive, immersive live
               shopping platform where you experience exclusive deals, and
               real-time interactions with your favourite brands.
             </Text>
           </Box>
-          <Box display={["none", "none", "flex"]} mt={8} w={"100%"}>
+          <Box display={["none", "none", "none", "flex"]} mt={8} w={"100%"}>
             <Input
               variant="outline"
               placeholder="Enter your email address"
               bg="#1A1C1F"
               borderColor="#1A1C1F"
-              w={{
-                base: "none",
-                sm: "none",
-                md: "80%",
-                lg: "80%",
-                "2xl": "60%",
-                xl: "50%",
-              }}
-              h={10}
+              w={"317px"}
+              h={"45px"}
               mr={2}
               color="#B4BECB"
-              fontSize={"12px"}
-              fontFamily={`CustomFontBold, Matter-Bold`}
+              fontSize={"13px"}
+              fontFamily={`CustomFont, MatterSQ-Regular`}
               value={value}
               onChange={(e) => setValue(e.target.value)}
             />
-            <CustomButton
-              value={value}
-              width={{ md: "15vw", xl: "14vw", lg: "14vw", "2xl": "14vw" }}
-            />
+            <CustomButton value={value} width={"191px"} />
           </Box>
         </Box>
 
         <Box
           backgroundImage="url('./shadow.png')"
           backgroundPosition="center"
-          backgroundRepeat="repeat"
-          backgroundSize={"cover"}
+          backgroundRepeat="no-repeat"
+          backgroundSize={"900px 400px"}
           justifyContent={"center"}
           alignItems={"center"}
           pos={"relative"}
+          display={"flex"}
           mt={{ sm: "20%", base: "20%", md: "10%", lg: "0" }}
           order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
           ms={{ base: "24%", sm: "24%", md: "0", lg: "0", "2xl": "none" }}
-          // mb={{
-          //   base: "-4vh",
-          //   sm: "-18%",
-          //   lg: "-30%",
-          //   xl: "-40%",
-          //   "2xl": "-40%",
-          //   // mb: "-20%",
-          // }}
         >
           <Flex filter="auto" brightness="90%" pos={"relative"}>
             <Box
@@ -235,25 +227,25 @@ function Hero() {
                 xl: "70%",
               }}
               pos={"absolute"}
-              // mr={"20%"}
-              left={{ "2xl": "-17%", lg: "-22%", md: "-20%" }}
+              left={{ "2xl": "-11%", lg: "-14%", md: "-20%" }}
               display={{ base: "none", sm: "none", md: "none", lg: "flex" }}
             >
               <Image
                 src="./star.svg"
                 objectFit={"contain"}
-                style={{ width: "100%" }}
+                w={"247.71px"}
+                h={"54.71px"}
               />
             </Box>
             <Box
               order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
               w={{
                 sm: "75%",
-                lg: "65%",
+                lg: "60%",
                 md: "60%",
-                xl: "70%",
+                xl: "75%",
                 base: "75%",
-                "2xl": "55%",
+                "2xl": "75%",
               }}
               // pos={"relative"}
             >
@@ -261,23 +253,25 @@ function Hero() {
                 url="https://res.cloudinary.com/duprallvm/video/upload/v1685626517/Screen_Recording_2023-06-01_at_10.53.14_c1wzv9.mov"
                 playing={true}
                 loop={true}
-                width="100%"
-                height="90%"
+                width="85%"
+                height="95%"
+                // width="387.76px"
+                // height="686.61px"
               />
 
               <Box
                 pos={"absolute"}
                 h={{
-                  sm: "70%",
+                  // sm: "18%",
                   xl: "330px",
-                  base: "70%",
-                  "2xl": "340px",
+                  base: "18%",
+                  // "2xl": "330%",
                   md: "185px",
                 }}
                 w={"88%"}
                 top={{
                   base: "8vh",
-                  sm: "8vh",
+                  sm: "72%",
                   md: "48%",
                   lg: "52%",
                   "2xl": "56%",
