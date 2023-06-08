@@ -29,10 +29,10 @@ export default function Footer() {
               xl: "28px",
               sm: "24px",
             }}
-            px={{ sm: 5, base: 5, lg: 6, xl: 12 }}
+            px={{ lg: 6, xl: 12 }}
             fontFamily={"CustomFont, Matter-regular"}
             textAlign={"center"}
-            w={{ base: "90%", sm: "90%", xl: "90%", md: "80%", "2xl": "50%" }}
+            w={{ base: "100%", sm: "100%", xl: "90%", md: "80%", "2xl": "50%" }}
           >
             Get ready to redefine your shopping experience.
           </Heading>

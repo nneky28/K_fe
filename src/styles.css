@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'CustomFont';
-  src: url('./fonts/Matter-Regular.woff') format('truetype');
+  src: url('./fonts/Matter-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'CustomFontBold';
-  src: url('./fonts/MatterSQ-Bold.woff') format('truetype');
+  src: url('./fonts/MatterSQ-Bold.woff') format('woff');
 }
 
 #root {

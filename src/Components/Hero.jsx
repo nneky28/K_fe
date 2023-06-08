@@ -28,7 +28,7 @@ function Hero() {
         columns={[1, 1, 2, 2, 2]}
         spacing={{
           sm: "0",
-          base: "none",
+          base: "0",
           lg: "20%",
           md: "20%",
           "2xl": "10%",
@@ -36,7 +36,7 @@ function Hero() {
         }}
         overflow={"hidden"}
         h={"70%"}
-        w={{ base: "104%", sm: "100%", md: "100%", lg: "100%", "2xl": "100%" }}
+        w={{ base: "100%", sm: "100%", md: "100%", lg: "100%", "2xl": "100%" }}
         p={[2, 6, 6, 10, 10]}
         ms={{ base: "0", sm: "0", md: "7%", lg: "7%", "2xl": "8%" }}
         mt={["1%", "6%"]}
@@ -62,11 +62,11 @@ function Hero() {
             <Heading
               as="h1"
               fontSize={{
-                base: "30px",
+                base: "27px",
                 md: "30px",
                 lg: "40px",
                 xl: "58px",
-                sm: "33px",
+                sm: "27px",
               }}
               noOfLines={1}
               color={"white"}
@@ -75,6 +75,7 @@ function Hero() {
               brightness="90%"
               mt={[1, 6, 7, 4, 3]}
               textAlign={"center"}
+              pos={"relative"}
             >
               Shop on
             </Heading>
@@ -82,31 +83,31 @@ function Hero() {
               <Image
                 src={video}
                 objectFit="contain"
-                w={["160px", "150px", "160px", "175px", "205px"]}
-                h={{ base: "50px", sm: "50px", md: "50px", lg: "70px" }}
+                w={["90%", "90%", "160px", "175px", "205px"]}
+                h={{ base: "52px", sm: "50px", md: "50px", lg: "70px" }}
                 mt={{ sm: 4, base: 4, lg: 3, xl: 3 }}
               />
               <Heading
                 position="absolute"
                 bottom="1"
-                top={{ base: "none", sm: "5", md: "6", lg: "5", "2xl": 2 }}
+                top={{ base: "5", sm: "5", md: "6", lg: "5", "2xl": 2 }}
                 right={["0", "5"]}
                 px="1"
                 color="#FFEBB3"
                 as="h1"
                 textAlign={"center"}
                 fontSize={{
-                  base: "30px",
+                  base: "32px",
                   md: "38px",
                   lg: "48px",
                   xl: "55px",
-                  sm: "34px",
+                  sm: "32px",
                   "2xl": "61px",
                 }}
                 noOfLines={1}
                 brightness="90%"
                 // mt={2}
-                left={["6", "6", "7", "6", "5"]}
+                left={["3", "3", "7", "6", "5"]}
               >
                 video
               </Heading>
@@ -117,11 +118,11 @@ function Hero() {
             noOfLines={1}
             color={"white"}
             fontSize={{
-              base: "30px",
+              base: "33px",
               md: "33px",
               lg: "50px",
               xl: "58px",
-              sm: "33px",
+              sm: "34px",
             }}
           >
             with Kommerce
@@ -130,7 +131,7 @@ function Hero() {
             mt={5}
             w={{
               base: "100%",
-              sm: "100%",
+              sm: "85vw",
               md: "100%",
               "2xl": "67%",
               lg: "100%",
@@ -154,7 +155,7 @@ function Hero() {
               real-time interactions with your favourite brands.
             </Text>
           </Box>
-          <Box display={["none", "none", "flex"]} mt={8}>
+          <Box display={["none", "none", "flex"]} mt={8} w={"100%"}>
             <Input
               variant="outline"
               placeholder="Enter your email address"
@@ -163,10 +164,10 @@ function Hero() {
               w={{
                 base: "none",
                 sm: "none",
-                md: "75%",
-                lg: "40%",
-                "2xl": "40%",
-                xl: "40%",
+                md: "80%",
+                lg: "80%",
+                "2xl": "60%",
+                xl: "50%",
               }}
               h={10}
               mr={2}
@@ -176,7 +177,10 @@ function Hero() {
               value={value}
               onChange={(e) => setValue(e.target.value)}
             />
-            <CustomButton value={value} width={{ md: "18vw", xl: "14vw" }} />
+            <CustomButton
+              value={value}
+              width={{ md: "15vw", xl: "14vw", lg: "14vw", "2xl": "14vw" }}
+            />
           </Box>
         </Box>
 
@@ -190,14 +194,15 @@ function Hero() {
           pos={"relative"}
           mt={{ sm: "20%", base: "20%", md: "10%", lg: "0" }}
           order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
-          ms={{ base: "30%", sm: "25%", md: "0", lg: "0", "2xl": "none" }}
-          // mb={{
-          //   base: "-20%",
-          //   sm: "-20%",
-          //   lg: "-30%",
-          //   xl: "-40%",
-          //   "2xl": "-40%",
-          // }}
+          ms={{ base: "24%", sm: "24%", md: "0", lg: "0", "2xl": "none" }}
+          mb={{
+            base: "4vh",
+            sm: "4vh",
+            lg: "-30%",
+            xl: "-40%",
+            "2xl": "-40%",
+            // mb: "-20%",
+          }}
         >
           <Flex filter="auto" brightness="90%" pos={"relative"}>
             <Box
@@ -223,11 +228,11 @@ function Hero() {
             <Box
               order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
               w={{
-                sm: "70%",
+                sm: "75%",
                 lg: "65%",
                 md: "60%",
                 xl: "70%",
-                base: "70%",
+                base: "75%",
                 "2xl": "55%",
               }}
               // pos={"relative"}
@@ -242,11 +247,17 @@ function Hero() {
 
               <Box
                 pos={"absolute"}
-                h={{ sm: "275px", xl: "330px", base: "295px", "2xl": "340px" }}
+                h={{
+                  sm: "70%",
+                  xl: "330px",
+                  base: "70%",
+                  "2xl": "340px",
+                  md: "185px",
+                }}
                 w={"88%"}
                 top={{
-                  base: "12%",
-                  sm: "25%",
+                  base: "8vh",
+                  sm: "8vh",
                   md: "48%",
                   lg: "52%",
                   "2xl": "56%",

@@ -12,7 +12,7 @@ function CustomButton(props) {
 
   return (
     <>
-      <Center>
+      <Box>
         <Text
           as="button"
           color="#FFFFFF"
@@ -28,7 +28,7 @@ function CustomButton(props) {
         >
           Get early access
         </Text>
-      </Center>
+      </Box>
 
       {isOpen && (
         <CustomModal isOpen={isOpen} onClose={onClose} text={props.value} />

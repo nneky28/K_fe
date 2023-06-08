@@ -68,21 +68,24 @@ function Gallery() {
 
             marginBottom: "1%",
           }}
-          w={{ base: "60%", sm: "50%", md: "53%", lg: "31%", "2xl": "28%" }}
+          w={{ base: "60%", sm: "55%", md: "53%", lg: "31%", "2xl": "28%" }}
         />
       </Center>
       <Center>
-        <Center w={{ base: "90%", md: "60%", lg: "32%", "2xl": "29%" }}>
+        <Center
+          w={{ base: "90%", md: "60%", lg: "32%", "2xl": "29%", sm: "100%" }}
+        >
           <Text
             color={"white"}
-            px={{ base: 10, sm: 10, md: 2, lg: 0, "2xl": 2 }}
+            px={{ base: 10, sm: 5, md: 2, lg: 0, "2xl": 2 }}
             textAlign={"center"}
             fontSize={{
               base: "12px",
-              sm: "10px",
+              sm: "12px",
               md: "14.4px",
               lg: "15px",
               "2xl": "20px",
+              xl: "16px",
             }}
           >
             Discover a secure and delightful shopping experience with live

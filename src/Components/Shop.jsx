@@ -30,29 +30,30 @@ function Shop() {
               ms={{
                 base: "18%",
                 sm: "20%",
-                md: "39%",
-                lg: "40%",
+                md: "10%",
+                lg: "20%",
                 xl: "10%",
                 "2xl": "30%",
               }}
               w={{
                 "2xl": "70%",
                 xl: "19vw",
-                lg: "40vw",
-                md: "60vh",
+                lg: "80%",
+                md: "18vw",
                 base: "80%",
               }}
             />
             <Image
               src={family}
               objectFit={"cover"}
-              mt={[1, 2, 4, 3]}
+              mt={[1, 2, 4, 4, 5]}
               w={{
                 "2xl": "70%",
                 xl: "215vw",
-                lg: "60%",
-                md: "60%",
+                lg: "205vh",
+                md: "140vh",
                 base: "80%",
+                sm: "400vw",
               }}
             />
           </Box>
@@ -61,7 +62,7 @@ function Shop() {
               src={woman}
               objectFit={"contain"}
               ms={["0%", "5%"]}
-              w={{ md: "180vw", sm: "320vw" }}
+              w={{ md: "184vw", sm: "320vw", xl: "184vw", lg: "188vw" }}
             />
           </Box>
         </Flex>
@@ -113,7 +114,7 @@ function Shop() {
                 "2xl": "17px",
               }}
               color={"#B4BECB"}
-              w={{ base: 320, md: 335, lg: 460, xl: 480 }}
+              w={{ base: 320, md: 335, lg: 460, xl: 480, sm: 415 }}
               pr={{ base: 10 }}
               // w={[450, 315, 335, 460, 600]}
             >
