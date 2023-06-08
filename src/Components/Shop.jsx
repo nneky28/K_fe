@@ -62,7 +62,7 @@ function Shop() {
               src={woman}
               objectFit={"contain"}
               ms={["0%", "5%"]}
-              w={{ md: "184vw", sm: "320vw", xl: "184vw", lg: "188vw" }}
+              w={{ md: "184vw", sm: "320vw", xl: "188vw", lg: "188vw" }}
             />
           </Box>
         </Flex>

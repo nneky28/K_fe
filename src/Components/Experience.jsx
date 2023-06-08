@@ -11,7 +11,7 @@ function Experience() {
         base: "25vh",
         md: "35vh",
         lg: "32vh",
-        xl: "50vh",
+        xl: "70vh",
         sm: "25vh",
         "2xl": "30vh",
       }}
@@ -20,7 +20,7 @@ function Experience() {
         base: "100%",
         md: "30%",
         lg: "30%",
-        xl: "10%",
+        xl: "20%",
         "2xl": "15%",
       }}
       // w={"100%"}
@@ -49,15 +49,15 @@ function Experience() {
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
           backgroundSize={"215px 270px"}
-          height={{ base: "40vh", lg: "50vh", xl: "40vh", "2xl": "65vh" }}
+          height={{ base: "40vh", lg: "40vh", xl: "65vh", "2xl": "65vh" }}
           alignItems="center"
           justifyContent="center"
           position="absolute"
           w={{
             base: "90%",
             md: "60%",
-            xl: "40%",
-            lg: "45%",
+            xl: "30%",
+            lg: "40%",
             "2xl": "35vh",
             sm: "75%",
           }}
