@@ -49,7 +49,7 @@ export default function Footer() {
               "2xl": "17px",
             }}
             py={2}
-            px={{ sm: 30, base: 12, lg: 6, xl: 12, md: 6 }}
+            px={{ sm: 30, base: 12, lg: 12, xl: 12, md: 6 }}
             textAlign={"center"}
             w={{ base: "60%", sm: "100%", xl: "50%", md: "75%", "2xl": "50%" }}
           >

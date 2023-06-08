@@ -73,7 +73,7 @@ function Hero() {
               filter="grayscale(100%)"
               textShadow="1px 1px gray"
               brightness="90%"
-              mt={[1, 6, 7, 4, 3]}
+              mt={{ sm: 1, md: 6, lg: 7, xl: 4, "2xl": 3 }}
               textAlign={"center"}
               pos={"relative"}
             >
@@ -99,28 +99,35 @@ function Hero() {
                 top={{
                   base: "4",
                   sm: "4",
-                  md: "6",
+                  md: "5",
                   lg: "5",
                   "2xl": 2,
                   xl: "3",
                 }}
-                right={["0", "5"]}
+                right={{
+                  base: "0",
+                  sm: "0",
+                  md: "0",
+                  lg: "1",
+                  xl: "0",
+                  "2xl": "1",
+                }}
                 px="1"
                 color="#FFEBB3"
                 as="h1"
                 textAlign={"center"}
                 fontSize={{
                   base: "32px",
-                  md: "38px",
+                  md: "39px",
                   lg: "48px",
-                  xl: "55px",
-                  sm: "38px",
+                  xl: "60px",
+                  sm: "39px",
                   "2xl": "61px",
                 }}
                 noOfLines={1}
                 brightness="90%"
                 // mt={2}
-                left={["5", "5", "7", "6", "1"]}
+                left={{ sm: "1", base: "1", md: "1", lg: "1", xl: "1" }}
               >
                 video
               </Heading>
