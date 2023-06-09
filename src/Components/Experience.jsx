@@ -44,7 +44,7 @@ function Experience() {
               md: "80%",
               xl: "40%",
               "2xl": "30%",
-              lg: "30%",
+              lg: "40%",
             }}
             display="flex"
             alignItems="center"
@@ -56,7 +56,7 @@ function Experience() {
               xl: "25%",
               "2xl": "30%",
               // sm: "70%",
-              lg: "20%",
+              lg: "30%",
             }}
           >
             <Center w="100%" h="100%">

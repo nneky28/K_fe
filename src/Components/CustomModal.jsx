@@ -95,7 +95,7 @@ function CustomModal({ isOpen, onClose, text }) {
       <DrawerContent
         style={modalStyle}
         bg="#1B1C20"
-        h={{ xl: "50vh", "2xl": "33vh", md: "30vh", lg: "12vh", sm: "50%" }}
+        h={{ xl: "60vh", "2xl": "60vh", md: "60vh", lg: "60vh", sm: "50%" }}
       >
         <DrawerHeader color={"#FFFFFF"} textAlign={"center"} fontSize={"15px"}>
           Join our waitlist
