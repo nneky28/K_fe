@@ -8,21 +8,27 @@ import {
   AspectRatio,
   Image,
 } from "@chakra-ui/react";
-import React from "react";
+// import React from "react";
 import ReactPlayer from "react-player";
 import Marquee from "react-fast-marquee";
+import React, { useEffect, useState } from "react";
+import { one, two, three, four, five } from "../assets/images";
 
 function Gallery() {
+  const [isVideoPlaying, setVideoPlaying] = useState(false);
+
+  useEffect(() => {
+    setVideoPlaying(true);
+  }, []);
   const images = [
-    { id: 1, img: "./people/1.png" },
-    { id: 2, img: "./people/2.png" },
-    { id: 3, img: "./people/3.png" },
-    { id: 4, img: "./people/4.png" },
-    { id: 5, img: "./people/5.png" },
+    { id: 1, img: one },
+    { id: 2, img: two },
+    { id: 3, img: three },
+    { id: 4, img: four },
+    { id: 5, img: five },
     { id: 6, img: "./people/6.png" },
     { id: 7, img: "./people/7.png" },
     { id: 8, img: "./people/8.png" },
-    // { id: 9, img: "./people/9.png" },
   ];
 
   const images1 = [
@@ -35,8 +41,6 @@ function Gallery() {
     { id: 17, img: "./people/17.png" },
     { id: 18, img: "./people/18.png" },
     { id: 19, img: "./people/19.png" },
-    // { id: 20, img: "./people/20.png" },
-    // { id: 21, img: "./people/21.png" },
   ];
 
   const images2 = [
@@ -49,8 +53,6 @@ function Gallery() {
     { id: 28, img: "./people/28.png" },
     { id: 29, img: "./people/29.png" },
     { id: 30, img: "./people/30.png" },
-    // { id: 31, img: "./people/31.png" },
-    // { id: 32, img: "./people/32.png" },
   ];
 
   const gradientColor = [0, 0.4, 0.5];
@@ -172,18 +174,18 @@ function Gallery() {
           </Flex>
         </Box>
 
-        {/* <Center> */}
         <ReactPlayer
-          url="https://res.cloudinary.com/duprallvm/video/upload/v1685626774/Screen_Recording_2023-06-01_at_14.37.24_epfydv.mov"
-          // url="https://res.cloudinary.com/duprallvm/video/upload/v1686317856/Screen-Recording-2023-06-01-at-1_1_zvydcx.mp4"
+          url="https://res.cloudinary.com/duprallvm/video/upload/v1686317856/Screen-Recording-2023-06-01-at-1_1_zvydcx.mp4"
           playing={true}
+          onReady={() => {
+            setVideoPlaying(true);
+          }}
+          // controls
           loop={true}
           width="100%"
           height="100%"
-          // controls
           style={{ position: "absolute", top: 1 }}
         />
-        {/* </Center> */}
       </Box>
     </Box>
   );

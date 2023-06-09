@@ -267,10 +267,12 @@ function Hero() {
               }}
             >
               <ReactPlayer
-                url="https://res.cloudinary.com/duprallvm/video/upload/v1685626517/Screen_Recording_2023-06-01_at_10.53.14_c1wzv9.mov"
+                // url="https://res.cloudinary.com/duprallvm/video/upload/v1685626517/Screen_Recording_2023-06-01_at_10.53.14_c1wzv9.mov"
+                url="https://res.cloudinary.com/duprallvm/video/upload/v1686317785/Screen-Recording-2023-06-01-at-1_r0yzir.mp4"
                 playing={true}
                 loop={true}
                 width="85%"
+                // controls
                 height="95%"
               />
 

@@ -8,6 +8,11 @@ const product = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686125994/B
 const overlay = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686136524/overlay_uwdvss.png"
 const text = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686160363/text_bdwijy.svg"
 const phoneImage = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686161816/phone_c4w4bz.png"
+const one = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321810/1_a31jaw.png"
+const two = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321857/2_uesbtj.png"
+const three = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321915/3_ygevgy.png"
+const four = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321959/4_mgh2j7.png"
+const five = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321989/5_bo36t9.png"
 export {
     family,
     footerImg,
@@ -18,5 +23,10 @@ export {
     product,
     overlay,
     text,
-    phoneImage
+    phoneImage,
+    one,
+    two,
+    three,
+    four,
+    five
 }
