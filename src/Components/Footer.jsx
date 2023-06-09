@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <Box pos={"relative"} bg="#060809" overflow={"hidden"}>
       <Box
-        h={{ base: "25vh", md: "90vh", xl: "45vh", sm: "40vh", lg: "85vh" }}
+        h={{ base: "85vh", md: "90vh", xl: "45vh", sm: "80vh", lg: "85vh" }}
         overflow={"hidden"}
       >
         <Center px={[4, 0]} pos={"relative"}>
