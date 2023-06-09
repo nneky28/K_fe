@@ -14,20 +14,8 @@ function Experience() {
   const [isSmallerThanMd] = useMediaQuery("(max-width: 767px)");
 
   return (
-    <Box pos="relative" bg="#060809">
-      <Box
-        // h={
-        //   isSmallerThanMd
-        //     ? "100vh"
-        //     : { base: "100vh", md: "90vh", xl: "50vh", "2xl": "40vh" }
-        // }
-        marginTop={
-          isSmallerThanMd
-            ? "20%"
-            : { base: "20%", md: "25%", xl: "20%", "2xl": "15%" }
-        }
-        overflow="hidden"
-      >
+    <Box pos="relative" bg="#060809" mt={isSmallerThanMd ? "40%" : "20%"}>
+      <Box overflow="hidden">
         <Box zIndex={0} position="relative">
           <Marquee autoFill={true} bg="black">
             <Box>
@@ -52,7 +40,7 @@ function Experience() {
             backgroundRepeat="no-repeat"
             backgroundSize={isSmallerThanMd ? "70% 100%" : "contain"}
             height={{
-              base: "50%",
+              base: "40%",
               md: "80%",
               xl: "40%",
               "2xl": "30%",
@@ -62,7 +50,14 @@ function Experience() {
             alignItems="center"
             justifyContent="center"
             position="absolute"
-            w={{ base: "80%", md: "35%", xl: "25%", "2xl": "30%" }}
+            w={{
+              base: "60%",
+              md: "35%",
+              xl: "25%",
+              "2xl": "30%",
+              // sm: "70%",
+              lg: "20%",
+            }}
           >
             <Center w="100%" h="100%">
               <Image src={phoneImage} objectFit="contain" />
