@@ -20,11 +20,11 @@ function Experience() {
         md: "90vh",
         lg: "100vh",
         xl: "50vh",
-        sm: "80vh",
+        sm: "40vh",
         "2xl": "40vh",
       }}
       marginTop={{
-        sm: "40%",
+        sm: "20%",
         base: "100%",
         md: "25%",
         lg: "50%",
