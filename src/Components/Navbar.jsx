@@ -44,7 +44,11 @@ function Navbar() {
       zIndex="10"
       style={navbarStyle}
     >
-      <Image src="./logo.svg" style={{ width: "130px", height: "23px" }} />
+      <Image
+        src="./logo.svg"
+        style={{ width: "150px", height: "23px" }}
+        mt={2}
+      />
       <Box display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}>
         <CustomButton
           bg="transparent"

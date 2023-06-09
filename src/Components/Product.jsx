@@ -17,7 +17,7 @@ import CustomButton from "./CustomButton";
 function Product() {
   return (
     <>
-      <Center display={["flex", "flex", "none"]} mt={10} px={6}>
+      <Center display={["flex", "flex", "none"]} mt={20} px={6}>
         <Image src="./card.svg" objectFit={"contain"} />
       </Center>
       <Center
@@ -35,8 +35,6 @@ function Product() {
         <Center mt={"15%"}>
           <Card
             direction={{
-              base: "column",
-              sm: "column",
               md: "row",
               lg: "row",
               "2xl": "row",
@@ -126,20 +124,6 @@ function Product() {
                 alt="Caffe Latte"
                 h={"100%"}
               />
-              <Box
-                pos={"absolute"}
-                h={"100%"}
-                w={"100px"}
-                top={0}
-                bottom={0}
-                boxShadow={"#1A1C1F"}
-                bgGradient={{
-                  base: "linear(to-r, #1A1C1F 12.29%, #1A1C1F 48.43%,rgba(26, 28, 31, 0)  66.41%)",
-                  md: "linear(to-r, #1A1C1F 12.29%, #1A1C1F 48.43%,rgba(26, 28, 31, 0)  66.41%)",
-                  lg: "linear(to-r, #1A1C1F 12.29%, #1A1C1F 48.43%,rgba(26, 28, 31, 0)  66.41%)",
-                }}
-                opacity={0.8}
-              ></Box>
             </Box>
           </Card>
         </Center>

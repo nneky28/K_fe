@@ -21,7 +21,7 @@ function Shop() {
     <Center pos={"relative"}>
       <SimpleGrid
         columns={[1, 1, 2, 2, 2]}
-        spacing={{ base: "0", sm: "0", lg: 5, md: 5, "2xl": 12 }}
+        spacing={{ base: 0, sm: 0, lg: 5, md: 5, "2xl": 12 }}
         ms={["0%", "5%"]}
         px={[4, "5%"]}
       >
@@ -78,8 +78,8 @@ function Shop() {
 
         <Box
           mt={{
-            sm: 12,
-            base: 12,
+            sm: 0,
+            base: 0,
             md: "40%",
             lg: "35%",
             xl: "30%",
@@ -90,44 +90,44 @@ function Shop() {
             color={"#FFFFFF"}
             mt={8}
             fontSize={{
-              base: "20px",
-              sm: "20px",
+              base: "22px",
+              sm: "24px",
               md: "25px",
               lg: "33px",
               xl: "45px",
               "2xl": "60px",
             }}
             ms={{
-              sm: 2,
-              base: 2,
+              sm: 0,
+              base: 0,
               lg: 0,
               xl: 0,
               "2xl": 0,
               md: 0,
             }}
-            textAlign={isSmallerThanMd ? "center" : "flex-start"}
+            fontFamily={`CustomFontBold, MatterSQ-SemiBold`}
           >
             Shop products you love
           </Heading>
           <Heading
             color={"#FFFFFF"}
             fontSize={{
-              base: "20px",
-              sm: "20px",
+              base: "22px",
+              sm: "24px",
               md: "25px",
               lg: "33px",
               xl: "45px",
               "2xl": "60px",
             }}
             ms={{
-              sm: 2,
-              base: 2,
+              sm: 0,
+              base: 0,
               lg: 0,
               xl: 0,
               "2xl": 0,
               md: 0,
             }}
-            textAlign={isSmallerThanMd ? "center" : "flex-start"}
+            fontFamily={`CustomFontBold, MatterSQ-SemiBold`}
           >
             stress-free{" "}
             <span role="img" aria-label="Heart">
@@ -140,7 +140,7 @@ function Shop() {
           >
             <Text
               fontSize={{
-                base: "13px",
+                base: "14px",
                 sm: "14px",
                 md: "14px",
                 lg: "14px",
@@ -150,7 +150,7 @@ function Shop() {
               color={"#B4BECB"}
               w={{ base: 250, md: 435, lg: 460, xl: 520, sm: 405, "2xl": 933 }}
               pr={{ base: 1 }}
-              textAlign={isSmallerThanMd ? "center" : "flex-start"}
+              // textAlign={isSmallerThanMd ? "center" : "flex-start"}
               fontFamily={`CustomFont, MatterSQ-Regular`}
             >
               Experience interactive live shopping events with expert sellers,
@@ -160,7 +160,7 @@ function Shop() {
             </Text>
           </Center>
           <Box
-            mt={{ sm: 2, base: 2, md: 2, lg: "3%", "2xl": "3%" }}
+            mt={{ sm: "30px", base: "30px", md: 2, lg: "10%", "2xl": "7%" }}
             display={["none", "none", "none", "flex"]}
           >
             <CustomButton width={"15vw"} p={3} />

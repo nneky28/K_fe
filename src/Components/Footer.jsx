@@ -25,7 +25,7 @@ export default function Footer() {
               xl: "28px",
               sm: "24px",
             }}
-            px={{ lg: 6, xl: 12 }}
+            px={{ lg: 6, xl: 12, sm: 12 }}
             fontFamily="CustomFontMedium, MatterSQ-Medium"
             textAlign="center"
             w={{ base: "100%", sm: "100%", xl: "90%", md: "80%", "2xl": "50%" }}
@@ -33,7 +33,7 @@ export default function Footer() {
             Get ready to redefine your shopping experience.
           </Heading>
         </Center>
-        <Center mt={5} position="relative" mb={5}>
+        <Center mt={"16px"} position="relative" mb={5}>
           <Text
             color="white"
             fontSize={{
@@ -56,7 +56,7 @@ export default function Footer() {
         </Center>
 
         <Center
-          mt={8}
+          // mt={8}
           mb={10}
           position="relative"
           display={["none", "none", "flex", "flex"]}
@@ -71,7 +71,8 @@ export default function Footer() {
         justifyContent="space-between"
         px={["6%", "10%", "10%", "10%", "10%"]}
         overflow="hidden"
-        mb={["12vh", "12vh", "0", "0", "0"]}
+        mt={"32px"}
+        mb={["10vh", "10vh", "0", "0", "0"]}
       >
         <Flex gap={[3, 8, 8, 8, 8]}>
           <Image src="./insta.png" boxSize="20px" />

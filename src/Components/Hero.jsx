@@ -21,7 +21,12 @@ function Hero() {
   const [isSmallerThanMd] = useMediaQuery("(max-width: 767px)");
 
   return (
-    <Box justifyContent={"center"} alignSelf={"center"} bg="blackAlpha.900">
+    <Box
+      justifyContent={"center"}
+      alignSelf={"center"}
+      bg="blackAlpha.900"
+      pos={"relative"}
+    >
       <SimpleGrid
         columns={[1, 1, 2, 2, 2]}
         spacing={{
@@ -36,7 +41,7 @@ function Hero() {
         h={"70%"}
         w={{ base: "100%", sm: "100%", md: "100%", lg: "100%", "2xl": "100%" }}
         ms={{ base: "0", sm: "0", md: "7%", lg: "6%", "2xl": "6%" }}
-        mt={{ sm: "1%", md: "20%", xl: "6%" }}
+        mt={{ sm: "1%", md: "20%", xl: "8%" }}
       >
         <Box
           pos={"relative"}
@@ -158,6 +163,7 @@ function Hero() {
             display={["flex", "flex", "none", "none", "none"]}
             justifyContent="center"
             flexDirection={"row"}
+            pos={"relative"}
           >
             <Center>
               <Image src="./mobile.svg" objectFit="center" />
@@ -226,7 +232,7 @@ function Hero() {
           pos={"relative"}
           mt={{ sm: "20%", base: "20%", md: "10%", lg: "0" }}
           order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
-          ms={{ base: "24%", sm: "24%", md: "0", lg: "0", "2xl": "0" }}
+          ms={{ base: "20%", sm: "20%", md: "0", lg: "0", "2xl": "0" }}
         >
           <Flex filter="auto" brightness="90%" pos={"relative"}>
             <Box
@@ -252,7 +258,7 @@ function Hero() {
             <Box
               order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
               w={{
-                sm: "75%",
+                sm: "95%",
                 lg: "80%",
                 md: "80%",
                 xl: "75%",

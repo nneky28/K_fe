@@ -72,9 +72,12 @@ function CustomModal({ isOpen, onClose, text }) {
 
   const modalStyle = {
     border: "0.1 solid #63768D",
-    marginRight: isSmallerThanMd ? "auto" : "6%",
-    marginTop: "5%",
+    marginRight: isSmallerThanMd ? "10%" : "6%",
+    marginTop: isSmallerThanMd ? "30%" : "5%",
     borderRadius: 5,
+    width: "80%",
+    display: "flex",
+    justifyContent: isSmallerThanMd ? "center" : "flex-start",
   };
 
   const inputStyles = {
@@ -84,21 +87,15 @@ function CustomModal({ isOpen, onClose, text }) {
   };
 
   return (
-    <Drawer
-      isOpen={isOpen}
-      onClose={onClose}
-      size="sm"
-      w={"20%"}
-      // mr={{ xl: "30%" }}
-    >
+    <Drawer isOpen={isOpen} onClose={onClose} size="sm">
       <DrawerOverlay />
       <DrawerContent
         style={modalStyle}
         bg="#1B1C20"
-        h={{ xl: "60vh", "2xl": "60vh", md: "60vh", lg: "60vh", sm: "50%" }}
+        h={{ xl: "50vh", "2xl": "50vh", md: "35vh", lg: "40vh", sm: "40vh" }}
       >
         <DrawerHeader color={"#FFFFFF"} textAlign={"center"} fontSize={"15px"}>
-          Join our waitlist
+          Get early Access
         </DrawerHeader>
         <DrawerCloseButton color={"#FFFFFF"} fontSize={"7px"} mt={1} />
         <DrawerBody fontSize={"12px"} textAlign={"center"} color={"#B4BECB"}>
@@ -128,10 +125,10 @@ function CustomModal({ isOpen, onClose, text }) {
               >
                 <Stack direction="row" gap={5}>
                   <Radio value="1" colorScheme="red">
-                    <Heading fontSize={"12px"}>I’m a shopper</Heading>
+                    <Heading fontSize={"15px"}>I’m a shopper</Heading>
                   </Radio>
                   <Radio value="2" colorScheme="red">
-                    <Heading fontSize={"12px"}> I’m a seller</Heading>
+                    <Heading fontSize={"15px"}> I’m a seller</Heading>
                   </Radio>
                 </Stack>
               </RadioGroup>
@@ -144,6 +141,7 @@ function CustomModal({ isOpen, onClose, text }) {
                 mt={7}
                 mb={5}
                 w={"100%"}
+                h={"45px"}
                 _hover={{ bg: "rgba(250, 67, 84, 0.5)" }}
                 _active={{
                   bg: "#FA4354",
@@ -155,7 +153,7 @@ function CustomModal({ isOpen, onClose, text }) {
                 onClick={handleButtonClick}
                 fontFamily={`CustomFontMedium, MatterSQ-Medium`}
               >
-                Join our waitlist
+                Get early access
               </Button>
 
               <div>

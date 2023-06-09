@@ -73,6 +73,7 @@ function Gallery() {
       </Center>
       <Center>
         <Center
+          mt={3}
           w={{ base: "90%", md: "60%", lg: "35%", "2xl": "29%", sm: "100%" }}
         >
           <Text
@@ -97,7 +98,7 @@ function Gallery() {
       </Center>
 
       <Box
-        mt={{ base: "15%", sm: "15%", md: "5%", lg: "7%", "2xl": "7%" }}
+        mt={{ base: "15%", sm: "40px", md: "5%", lg: "3%", "2xl": "3%" }}
         pos={"relative"}
       >
         <Box boxShadow="dark-lg" p={["0", "10"]} rounded="full" bg="black">
@@ -106,7 +107,7 @@ function Gallery() {
               <Marquee
                 autoFill={true}
                 gradient={true}
-                gradientWidth={200}
+                gradientWidth={100}
                 gradientColor={[0, 0, 0.9]}
                 speed={8}
               >
@@ -129,7 +130,7 @@ function Gallery() {
               <Marquee
                 autoFill={true}
                 gradient={true}
-                gradientWidth={200}
+                gradientWidth={100}
                 gradientColor={[0, 0, 0.9]}
                 direction="right"
                 speed={9}
@@ -151,7 +152,7 @@ function Gallery() {
             <Center w={["100%", "100%", "85%%", "85%"]} ms={["0", "7%"]} mb={4}>
               <Marquee
                 gradient={true}
-                gradientWidth={150}
+                gradientWidth={100}
                 gradientColor={[0, 0, 0]}
                 autoFill={true}
                 speed={9}
@@ -171,18 +172,18 @@ function Gallery() {
           </Flex>
         </Box>
 
-        <Center>
-          <ReactPlayer
-            url="https://res.cloudinary.com/duprallvm/video/upload/v1685626774/Screen_Recording_2023-06-01_at_14.37.24_epfydv.mov"
-            playing={true}
-            loop={true}
-            width="100%"
-            height="100%"
-            // w={"287.69px"}
-            // h={"591.03px"}
-            style={{ position: "absolute", top: 1 }}
-          />
-        </Center>
+        {/* <Center> */}
+        <ReactPlayer
+          url="https://res.cloudinary.com/duprallvm/video/upload/v1685626774/Screen_Recording_2023-06-01_at_14.37.24_epfydv.mov"
+          // url="https://res.cloudinary.com/duprallvm/video/upload/v1686317856/Screen-Recording-2023-06-01-at-1_1_zvydcx.mp4"
+          playing={true}
+          loop={true}
+          width="100%"
+          height="100%"
+          // controls
+          style={{ position: "absolute", top: 1 }}
+        />
+        {/* </Center> */}
       </Box>
     </Box>
   );
