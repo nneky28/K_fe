@@ -16,11 +16,11 @@ function Experience() {
     <Box
       pos={"relative"}
       h={{
-        base: "12vh",
+        base: "50vh",
         md: "90vh",
         lg: "100vh",
         xl: "50vh",
-        sm: "80vh",
+        sm: "50vh",
         "2xl": "40vh",
       }}
       marginTop={{
