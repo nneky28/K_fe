@@ -13,11 +13,8 @@ import CustomButton from "./CustomButton";
 export default function Footer() {
   const today = new Date();
   return (
-    <Box pos="relative" bg="#060809" overflow="hidden">
-      <Box
-        h={{ base: "85vh", md: "90vh", xl: "45vh", sm: "80vh", lg: "85vh" }}
-        overflow="hidden"
-      >
+    <Box pos="relative" bg="#060809" overflow="hidden" mt={4}>
+      <Box overflow="hidden">
         <Center px={[4, 0]} pos="relative">
           <Heading
             color="white"
@@ -36,7 +33,7 @@ export default function Footer() {
             Get ready to redefine your shopping experience.
           </Heading>
         </Center>
-        <Center mt={5} position="relative">
+        <Center mt={5} position="relative" mb={5}>
           <Text
             color="white"
             fontSize={{
@@ -51,7 +48,7 @@ export default function Footer() {
             py={2}
             px={{ sm: 30, base: 12, lg: 12, xl: 12, md: 6 }}
             textAlign="center"
-            w={{ base: 339, sm: 339, xl: "50%", md: "75%", "2xl": "50%" }}
+            w={{ base: "100%", sm: "100%", xl: "50%", md: "75%", "2xl": "50%" }}
           >
             Join our waitlist now and secure your spot as one of the first to
             experience the revolutionary live shopping app when it launches.
@@ -60,6 +57,7 @@ export default function Footer() {
 
         <Center
           mt={8}
+          mb={10}
           position="relative"
           display={["none", "none", "flex", "flex"]}
         >
