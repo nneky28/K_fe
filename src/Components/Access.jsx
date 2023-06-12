@@ -22,14 +22,17 @@ import CustomButton from "./CustomButton";
 function Access() {
   const flexDirection = useBreakpointValue({
     base: "column",
-
     lg: "row",
   });
   const [isSmallerThanMd] = useMediaQuery(
     "(min-width: 768px) and (max-width: 1023px)"
   );
+  const center = useBreakpointValue({
+    sm: "center",
+    lg: "flex-start",
+  });
   return (
-    <Box px={[4, 5, 10, 24]} id="early-access" pos={"relative"}>
+    <Box px={[2, 2, 10, 24]} id="early-access" pos={"relative"}>
       <Tabs variant="unstyled" pos={"relative"}>
         <TabList
           bg={"#495969"}
@@ -43,9 +46,9 @@ function Access() {
             "2xl": "20%",
           }}
           mx={isSmallerThanMd ? "auto" : 0}
-          ms={isSmallerThanMd ? 5 : 4}
-          mt={"10%"}
-          justifyContent={isSmallerThanMd ? "center" : "flex-start"}
+          ms={{ sm: 7, md: 4, lg: 4, xl: 4, "2xl": 4 }}
+          mt={"15%"}
+          display={"flex"}
           alignItems={"center"}
           h={["32px", "32px", "32px", "32px", "32px", "33px"]}
         >
@@ -104,10 +107,24 @@ function Access() {
                   }}
                   fontFamily="CustomFontMedium, MatterSQ-Medium"
                   fontSize={["24px", "24px", "28px", "28px", "28px", "38px"]}
+                  textAlign={{
+                    sm: "center",
+                    lg: "left",
+                    xl: "left",
+                    md: "left",
+                    "2xl": "left",
+                  }}
                 >
                   Be among the first sellers to experience Kommerce.
                 </Heading>
                 <Text
+                  textAlign={{
+                    sm: "center",
+                    lg: "left",
+                    xl: "left",
+                    md: "left",
+                    "2xl": "left",
+                  }}
                   w={{
                     base: "100%",
                     sm: "100%",
@@ -139,7 +156,8 @@ function Access() {
                   }}
                   h={"45px"}
                   mr={2}
-                  color="#B4BECB"
+                  color="white"
+                  _placeholder={{ color: "inherit" }}
                   fontSize={"13px"}
                   fontFamily={`CustomFont, MatterSQ-Regular`}
                   mt={8}
@@ -161,7 +179,8 @@ function Access() {
                     h={"45px"}
                     mr={2}
                     mt={4}
-                    color="#B4BECB"
+                    color="white"
+                    _placeholder={{ color: "inherit" }}
                     fontSize={"13px"}
                     fontFamily={`CustomFont, MatterSQ-Regular`}
                   />
@@ -178,14 +197,14 @@ function Access() {
                     }}
                   />
                 </Box>
-                <Center display={["none", "none", "none", "flex"]}>
+                <Center>
                   <Text
                     fontSize={"14px"}
                     fontFamily="CustomFont, MatterSQ-Regular"
                     color={"#FA4354"}
                     textAlign={"center"}
                     textDecoration={"underline"}
-                    mt={4}
+                    mt={6}
                   >
                     Terms and conditions apply
                   </Text>
@@ -230,6 +249,13 @@ function Access() {
                   }}
                   fontFamily="CustomFontMedium, MatterSQ-Medium"
                   fontSize={["24px", "24px", "28px", "28px", "28px", "38px"]}
+                  textAlign={{
+                    sm: "center",
+                    lg: "left",
+                    xl: "left",
+                    md: "left",
+                    "2xl": "left",
+                  }}
                 >
                   Explore a whole new way of shopping with Kommerce
                 </Heading>
@@ -246,6 +272,13 @@ function Access() {
                   fontFamily="CustomFont, MatterSQ-Regular"
                   color={"#B4BECB"}
                   mt={3}
+                  textAlign={{
+                    sm: "center",
+                    lg: "left",
+                    xl: "left",
+                    md: "left",
+                    "2xl": "left",
+                  }}
                 >
                   Unlock up to ₦20,000 worth of shopping vouchers! Apply for
                   access now and invite three friends to Kommerce to enjoy this
@@ -305,14 +338,14 @@ function Access() {
                     }}
                   />
                 </Box>
-                <Center display={["none", "none", "none", "flex"]}>
+                <Center>
                   <Text
                     fontSize={"14px"}
                     fontFamily="CustomFont, MatterSQ-Regular"
                     color={"#FA4354"}
                     textAlign={"center"}
                     textDecoration={"underline"}
-                    mt={4}
+                    mt={6}
                   >
                     Terms and conditions apply
                   </Text>

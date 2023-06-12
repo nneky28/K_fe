@@ -236,7 +236,6 @@ function Hero() {
           backgroundSize={"380px"}
           pos={"relative"}
           mt={{ sm: "10%", base: "20%", md: "10%", lg: "0" }}
-          // order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
           ms={{ base: "15%", sm: "15%", md: "0", lg: "0", "2xl": "0" }}
         >
           <Flex filter="auto" brightness="90%" pos={"relative"}>

@@ -18,7 +18,7 @@ function Shop() {
   const [isSmallerThanMd] = useMediaQuery("(max-width: 767px)");
 
   return (
-    <Center pos={"relative"}>
+    <Center pos={"relative"} mt={"5%"}>
       <SimpleGrid
         columns={[1, 1, 2, 2, 2]}
         spacing={{ base: 0, sm: 0, lg: 5, md: 5, "2xl": 12 }}

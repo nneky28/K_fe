@@ -32,7 +32,7 @@ function Product() {
         }}
         display={["none", "none", "flex"]}
       >
-        <Center mt={"15%"}>
+        <Center mt={"20%"}>
           <Card
             direction={{
               md: "row",

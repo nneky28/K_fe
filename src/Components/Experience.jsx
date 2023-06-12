@@ -15,7 +15,7 @@ function Experience() {
   const [isSmallerThanMd] = useMediaQuery("(max-width: 767px)");
 
   return (
-    <Box pos="relative" mt={isSmallerThanMd ? "50%" : "25%"}>
+    <Box pos="relative" mt={isSmallerThanMd ? "50%" : "20%"}>
       <Box overflow="hidden">
         <Box zIndex={0} position="relative" bg="#060809">
           <Marquee autoFill={true} bg="black">
