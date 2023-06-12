@@ -29,8 +29,8 @@ function Access() {
     "(min-width: 768px) and (max-width: 1023px)"
   );
   return (
-    <Box px={[4, 5, 10, 24]} id="early-access">
-      <Tabs variant="unstyled">
+    <Box px={[4, 5, 10, 24]} id="early-access" pos={"relative"}>
+      <Tabs variant="unstyled" pos={"relative"}>
         <TabList
           bg={"#495969"}
           borderRadius={"full"}
@@ -43,14 +43,14 @@ function Access() {
             "2xl": "20%",
           }}
           mx={isSmallerThanMd ? "auto" : 0}
-          ms={isSmallerThanMd ? "auto" : 5}
+          ms={isSmallerThanMd ? 5 : 4}
           mt={"10%"}
           justifyContent={isSmallerThanMd ? "center" : "flex-start"}
           alignItems={"center"}
           h={["32px", "32px", "32px", "32px", "32px", "33px"]}
         >
           <Tab
-            fontSize={["13px", "13px", "13px", "13px", "13px", "24px"]}
+            fontSize={["13px", "13px", "13px", "13px", "13px", "20px"]}
             fontFamily="CustomFont, MatterSQ-Regular"
             w={isSmallerThanMd ? "100%" : "64%"}
             _selected={{
@@ -65,7 +65,7 @@ function Access() {
             I’m a Seller
           </Tab>
           <Tab
-            fontSize={["13px", "13px", "13px", "13px", "13px", "24px"]}
+            fontSize={["13px", "13px", "13px", "13px", "13px", "20px"]}
             // fontSize={"13px"}
             fontFamily="CustomFont, MatterSQ-Regular"
             w={{
