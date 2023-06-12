@@ -82,11 +82,11 @@ function Product() {
                     md: "15px",
                     lg: "15px",
                     xl: "15px",
-                    "2xl": "17px",
+                    "2xl": "24px",
                   }}
                   fontFamily={`CustomFont, MatterSQ-Regular`}
-                  mt={[1, 3]}
-                  lineHeight={"26px"}
+                  mt={[1, 3, 3, 3, 3, 12]}
+                  lineHeight={["26px", "26px", "26px", "26px", "26px", "60px"]}
                   ms={[0, 3]}
 
                   // w={"100%"}

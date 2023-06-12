@@ -62,7 +62,7 @@ function Gallery() {
 
   return (
     <Box w={"100%"}>
-      <Center mt={{ md: "20%", "2xl": "0", xl: "0", sm: "30%" }}>
+      <Center mt={{ md: "5%", "2xl": "0", xl: "0" }}>
         <Image
           src="./discover.png"
           style={{
@@ -180,7 +180,6 @@ function Gallery() {
           onReady={() => {
             setVideoPlaying(true);
           }}
-          // controls
           loop={true}
           width="100%"
           height="100%"

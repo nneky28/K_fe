@@ -57,6 +57,7 @@ function Navbar() {
             border: "0.1px solid #FA4354",
             fontSize: "13px",
           }}
+          scrollTo="early-access"
         />
       </Box>
     </Box>

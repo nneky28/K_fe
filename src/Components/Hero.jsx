@@ -45,7 +45,7 @@ function Hero() {
       >
         <Box
           pos={"relative"}
-          order={{ base: 2, sm: 2, md: 1, lg: 1, "2xl": 1 }}
+          mt={{ sm: "30%", base: "20%", md: "10%", lg: "0" }}
           ms={{ base: "0", sm: "0", md: "1%", lg: "0", "2xl": "none" }}
         >
           <Box
@@ -98,7 +98,8 @@ function Hero() {
                   base: "52px",
                   sm: "50px",
                   md: "40px",
-                  lg: "70px",
+                  lg: "60px",
+                  xl: "70px",
                 }}
                 mt={{ md: 5, lg: 3, xl: 3 }}
               />
@@ -109,7 +110,7 @@ function Hero() {
                   base: "0",
                   sm: "0",
                   md: "5",
-                  lg: "5",
+                  lg: "4",
                   "2xl": 3,
                   xl: "3",
                 }}
@@ -128,7 +129,7 @@ function Hero() {
                 fontSize={{
                   base: "32px",
                   md: "33px",
-                  lg: "60px",
+                  lg: "50px",
                   xl: "60px",
                   sm: "34px",
                   "2xl": "60px",
@@ -169,13 +170,14 @@ function Hero() {
               <Image src="./mobile.svg" objectFit="center" />
             </Center>
           </Box>
-          <Center
+          <Box
             mt={5}
             w={{
               md: "100%",
-              "2xl": "95%",
+              "2xl": "80%",
               lg: "100%",
               xl: "100%",
+              sm: "100%",
             }}
           >
             <Text
@@ -188,10 +190,9 @@ function Hero() {
                 "2xl": "20px",
                 xl: "20px",
               }}
+              px={{ sm: 5, base: 5, md: 0, lg: 0, xl: 0, "2xl": 0 }}
               w={{
-                sm: 338,
-                base: 338,
-                md: 533,
+                md: 403,
                 lg: 533,
                 xl: 533,
                 "2xl": 933,
@@ -204,7 +205,7 @@ function Hero() {
               shopping platform where you experience exclusive deals, and
               real-time interactions with your favourite brands.
             </Text>
-          </Center>
+          </Box>
           <Box display={["none", "none", "none", "flex"]} mt={8} w={"100%"}>
             <Input
               variant="outline"
@@ -220,7 +221,11 @@ function Hero() {
               value={value}
               onChange={(e) => setValue(e.target.value)}
             />
-            <CustomButton value={value} width={"191px"} />
+            <CustomButton
+              value={value}
+              width={"191px"}
+              scrollTo="early-access"
+            />
           </Box>
         </Box>
 
@@ -230,9 +235,9 @@ function Hero() {
           backgroundRepeat="no-repeat"
           backgroundSize={"380px"}
           pos={"relative"}
-          mt={{ sm: "20%", base: "20%", md: "10%", lg: "0" }}
-          order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
-          ms={{ base: "20%", sm: "20%", md: "0", lg: "0", "2xl": "0" }}
+          mt={{ sm: "10%", base: "20%", md: "10%", lg: "0" }}
+          // order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
+          ms={{ base: "15%", sm: "15%", md: "0", lg: "0", "2xl": "0" }}
         >
           <Flex filter="auto" brightness="90%" pos={"relative"}>
             <Box
@@ -256,7 +261,7 @@ function Hero() {
               />
             </Box>
             <Box
-              order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
+              // order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
               w={{
                 sm: "95%",
                 lg: "80%",
@@ -290,7 +295,7 @@ function Hero() {
                   sm: "72%",
                   md: "48%",
                   lg: "52%",
-                  "2xl": "66%",
+                  "2xl": "70%",
                   xl: "54%",
                 }}
                 left={6.1}

@@ -26,7 +26,7 @@ function Shop() {
         px={[4, "5%"]}
       >
         <Flex gap={["4", "1", "2"]} w={["100%", "95%"]}>
-          <Box mt={[10, 40]}>
+          <Box mt={[20, 20, 20, 20, 20, "30%"]}>
             <Image
               src={girls}
               objectFit={"cover"}
@@ -36,7 +36,7 @@ function Shop() {
                 md: "11%",
                 lg: "20%",
                 xl: "9%",
-                "2xl": "15%",
+                "2xl": "17%",
               }}
               w={{
                 "2xl": "18vw",
@@ -49,7 +49,7 @@ function Shop() {
             <Image
               src={family}
               objectFit={"cover"}
-              mt={[1, 2, 4, 4, 5]}
+              mt={[1, 2, 4, 4, 5, 10]}
               w={{
                 "2xl": "130vw",
                 xl: "215vw",
@@ -60,7 +60,7 @@ function Shop() {
               }}
             />
           </Box>
-          <Box mt={[0, 40]}>
+          <Box mt={[20, 20, 20, 20, 20, "30%"]}>
             <Image
               src={woman}
               objectFit={"contain"}
@@ -69,7 +69,7 @@ function Shop() {
                 md: "444vw",
                 sm: "320vw",
                 xl: "188vw",
-                lg: "200vw",
+                lg: "508vw",
                 "2xl": "107vw",
               }}
             />
@@ -80,10 +80,10 @@ function Shop() {
           mt={{
             sm: 0,
             base: 0,
-            md: "40%",
-            lg: "35%",
-            xl: "30%",
-            "2xl": "25%",
+            md: "20%",
+            lg: "12%",
+            xl: "10%",
+            "2xl": "35%",
           }}
         >
           <Heading
@@ -134,10 +134,7 @@ function Shop() {
               ❤️
             </span>
           </Heading>
-          <Center
-            // w={40}
-            mt={{ sm: 2, base: 2, md: 3, lg: "3%", xl: "4%", "2xl": "3%" }}
-          >
+          <Box mt={{ sm: 2, base: 2, md: 3, lg: "3%", xl: "4%", "2xl": "3%" }}>
             <Text
               fontSize={{
                 base: "14px",
@@ -148,9 +145,8 @@ function Shop() {
                 "2xl": "17px",
               }}
               color={"#B4BECB"}
-              w={{ base: 250, md: 435, lg: 460, xl: 520, sm: 405, "2xl": 933 }}
+              w={{ base: 250, md: 335, lg: 460, xl: 520, sm: 322, "2xl": 933 }}
               pr={{ base: 1 }}
-              // textAlign={isSmallerThanMd ? "center" : "flex-start"}
               fontFamily={`CustomFont, MatterSQ-Regular`}
             >
               Experience interactive live shopping events with expert sellers,
@@ -158,12 +154,12 @@ function Shop() {
               shoppers, shop conveniently from home, and enjoy secure payment
               processing.
             </Text>
-          </Center>
+          </Box>
           <Box
             mt={{ sm: "30px", base: "30px", md: 2, lg: "10%", "2xl": "7%" }}
             display={["none", "none", "none", "flex"]}
           >
-            <CustomButton width={"15vw"} p={3} />
+            <CustomButton width={"15vw"} p={3} scrollTo="early-access" />
           </Box>
         </Box>
       </SimpleGrid>

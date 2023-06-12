@@ -1,18 +1,30 @@
-import { Box, Button, useDisclosure, Text, Center } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
+import { Box, Button, useDisclosure, Text } from "@chakra-ui/react";
+import React from "react";
 import CustomModal from "./CustomModal";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function CustomButton(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  // useEffect(() => {
-  //   let val = localStorage.getItem("address");
-  //   setText(val);
-  // }, []);
+  // const scrollToTop = () => {
+  //   scroll.scrollToTop();
+  // };
+
+  const handleButtonClick = () => {
+    scroll.scrollTo(props.scrollTo, {
+      duration: 500,
+      smooth: "easeInOutQuart",
+    });
+  };
 
   return (
     <>
-      <Box>
+      <ScrollLink
+        to={props.scrollTo}
+        onClick={handleButtonClick}
+        smooth={true}
+        duration={500}
+      >
         <Text
           as="button"
           color="#FFFFFF"
@@ -20,7 +32,6 @@ function CustomButton(props) {
           w={props.width}
           fontSize={"15px"}
           fontFamily={`CustomFontMedium, MatterSQ-Medium`}
-          onClick={onOpen}
           style={props.style}
           textAlign="center"
           p={props?.p ? props?.p : 1.5}
@@ -29,7 +40,7 @@ function CustomButton(props) {
         >
           Get early access
         </Text>
-      </Box>
+      </ScrollLink>
 
       {isOpen && (
         <CustomModal isOpen={isOpen} onClose={onClose} text={props.value} />

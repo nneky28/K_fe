@@ -7,6 +7,7 @@ import Shop from "../Components/Shop";
 import Product from "../Components/Product";
 import Experience from "../Components/Experience";
 import Footer from "../Components/Footer";
+import Access from "../Components/Access";
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
         <Shop />
         <Product />
         <Experience />
+        <Access />
         <Footer />
       </Box>
     </>

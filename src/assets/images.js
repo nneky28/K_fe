@@ -13,6 +13,9 @@ const two = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321857/2_ues
 const three = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321915/3_ygevgy.png"
 const four = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321959/4_mgh2j7.png"
 const five = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321989/5_bo36t9.png"
+const sell = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686522437/side-view-smiley-woman-with-clothes_1_cyephj.png"
+const merchant = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686522517/image_1_ugchdo.png"
+
 export {
     family,
     footerImg,
@@ -28,5 +31,7 @@ export {
     two,
     three,
     four,
-    five
+    five,
+    merchant,
+    sell
 }
