@@ -51,13 +51,14 @@ function Access() {
           display={"flex"}
           alignItems={"center"}
           h={["32px", "32px", "32px", "32px", "32px", "33px"]}
+          color={"#FFFFFF"}
         >
           <Tab
             fontSize={["13px", "13px", "13px", "13px", "13px", "20px"]}
             fontFamily="CustomFont, MatterSQ-Regular"
             w={isSmallerThanMd ? "100%" : "64%"}
             _selected={{
-              color: "#FFFFFF",
+              // color: "#FFFFFF",
               bg: "#FA4354",
               borderRadius: "full",
               h: "28px",
@@ -80,7 +81,7 @@ function Access() {
               "2xl": "60%",
             }}
             _selected={{
-              color: "#FFFFFF",
+              // color: "#FFFFFF",
               bg: "#FA4354",
               borderRadius: "full",
               h: "28px",
@@ -156,8 +157,7 @@ function Access() {
                   }}
                   h={"45px"}
                   mr={2}
-                  color="white"
-                  _placeholder={{ color: "inherit" }}
+                  color="#B4BECB"
                   fontSize={"13px"}
                   fontFamily={`CustomFont, MatterSQ-Regular`}
                   mt={8}
@@ -179,8 +179,7 @@ function Access() {
                     h={"45px"}
                     mr={2}
                     mt={4}
-                    color="white"
-                    _placeholder={{ color: "inherit" }}
+                    color="#B4BECB"
                     fontSize={"13px"}
                     fontFamily={`CustomFont, MatterSQ-Regular`}
                   />

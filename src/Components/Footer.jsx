@@ -44,7 +44,13 @@ export default function Footer() {
         zIndex="20"
         w="100%"
       >
-        <CustomButton width="100VW" p={3} mobile height={"10vh"} />
+        <CustomButton
+          width="100VW"
+          p={3}
+          mobile
+          height={"10vh"}
+          scrollTo="early-access"
+        />
       </Box>
     </Box>
   );

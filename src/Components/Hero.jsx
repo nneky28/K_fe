@@ -283,15 +283,15 @@ function Hero() {
               <Box
                 pos={"absolute"}
                 h={{
-                  sm: "27%",
+                  sm: "28%",
                   xl: "330px",
                   base: "18%",
                   md: "285px",
                 }}
                 w={"88%"}
                 top={{
-                  base: "8vh",
-                  sm: "72%",
+                  base: "68%",
+                  sm: "67%",
                   md: "48%",
                   lg: "52%",
                   "2xl": "70%",
