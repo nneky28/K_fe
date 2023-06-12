@@ -121,7 +121,6 @@ function Experience() {
           </Center>
 
           <Center
-            // mt={8}
             mb={10}
             position="relative"
             display={["none", "none", "flex", "flex"]}

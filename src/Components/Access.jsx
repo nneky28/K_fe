@@ -206,9 +206,9 @@ function Access() {
                   base: "15%",
                   sm: "15%",
                   md: "15%",
-                  lg: "-8%",
+                  lg: "-5%",
                   xl: "-8%",
-                  "2xl": "-8%",
+                  "2xl": "-2%",
                 }}
               >
                 <Image src={sell} objectFit={"contain"} />
@@ -333,9 +333,9 @@ function Access() {
                   base: "15%",
                   sm: "15%",
                   md: "15%",
-                  lg: "-6%",
+                  lg: "-8%",
                   xl: "-8%",
-                  "2xl": "-3%",
+                  "2xl": "-2%",
                 }}
               >
                 <Image src={merchant} objectFit={"contain"} />
