@@ -25,7 +25,14 @@ const twelve = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686766255/13
 const feMobile = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686766569/phone_ifm7wm.png"
 const shadow = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686766665/shadow_ywcjxi.png"
 const discover = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686766701/discover_kavr92.png"
-
+const thirteen = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686825761/14_zkrs7n.png"
+const fourteen = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686825810/15_z884ef.png"
+const fifteen = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686825866/16_lpngla.png"
+const sixteen = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686825897/17_prlsw3.png"
+const seventeen = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686825928/18_awbltv.png"
+const eighteen = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686825967/19_odcndc.png"
+const nineteen = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686826019/20_yuodbr.png"
+const twenty = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686826049/21_jzi599.png"
 
 export {
     family,
@@ -54,5 +61,13 @@ export {
     twelve,
     feMobile,
     shadow,
-    discover
+    discover,
+    thirteen,
+    fourteen,
+    fifteen,
+    sixteen,
+    seventeen,
+    eighteen,
+    nineteen,
+    twenty
 }

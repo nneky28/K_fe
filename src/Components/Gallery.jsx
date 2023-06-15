@@ -26,6 +26,14 @@ import {
   eleven,
   twelve,
   discover,
+  thirteen,
+  fourteen,
+  fifteen,
+  sixteen,
+  seventeen,
+  eighteen,
+  nineteen,
+  twenty,
 } from "../assets/images";
 
 function Gallery() {
@@ -50,21 +58,20 @@ function Gallery() {
     { id: 12, img: ten },
     { id: 13, img: eleven },
     { id: 14, img: twelve },
-    { id: 15, img: "./people/15.png" },
-    { id: 16, img: "./people/16.png" },
-    { id: 17, img: "./people/17.png" },
-    { id: 18, img: "./people/18.png" },
-    { id: 19, img: "./people/19.png" },
+    { id: 15, img: thirteen },
+    { id: 16, img: fourteen },
+    { id: 17, img: fifteen },
+    { id: 18, img: sixteen },
+    { id: 19, img: seventeen },
   ];
 
   const images2 = [
-    { id: 22, img: "./people/22.png" },
-    { id: 23, img: "./people/23.png" },
-    { id: 24, img: "./people/24.png" },
+    { id: 22, img: eighteen },
+    { id: 23, img: nineteen },
+    { id: 24, img: twenty },
     { id: 25, img: "./people/25.png" },
     { id: 26, img: "./people/26.png" },
     { id: 27, img: "./people/27.png" },
-    { id: 28, img: "./people/28.png" },
     { id: 29, img: "./people/29.png" },
     { id: 30, img: "./people/30.png" },
   ];
