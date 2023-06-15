@@ -1,3 +1,16 @@
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .then((registration) => {
+        console.log("Service worker registered:", registration);
+      })
+      .catch((error) => {
+        console.error("Error registering service worker:", error);
+      });
+  });
+}
+
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";

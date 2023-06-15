@@ -32,7 +32,15 @@ function Access() {
     lg: "flex-start",
   });
   return (
-    <Box px={[2, 2, 10, 24]} id="early-access" pos={"relative"}>
+    <Box
+      p={"5%"}
+      id="early-access"
+      pos={"relative"}
+      w={"100%"}
+      justifyContent={"center"}
+      alignSelf={"center"}
+      mb={"7%"}
+    >
       <Tabs variant="unstyled" pos={"relative"}>
         <TabList
           bg={"#495969"}
@@ -47,7 +55,7 @@ function Access() {
           }}
           mx={isSmallerThanMd ? "auto" : 0}
           ms={{ sm: 7, md: 4, lg: 4, xl: 4, "2xl": 4 }}
-          mt={"15%"}
+          mt={"12%"}
           display={"flex"}
           alignItems={"center"}
           h={["32px", "32px", "32px", "32px", "32px", "33px"]}
@@ -58,7 +66,6 @@ function Access() {
             fontFamily="CustomFont, MatterSQ-Regular"
             w={isSmallerThanMd ? "100%" : "64%"}
             _selected={{
-              // color: "#FFFFFF",
               bg: "#FA4354",
               borderRadius: "full",
               h: "28px",
@@ -81,7 +88,6 @@ function Access() {
               "2xl": "60%",
             }}
             _selected={{
-              // color: "#FFFFFF",
               bg: "#FA4354",
               borderRadius: "full",
               h: "28px",
@@ -95,7 +101,7 @@ function Access() {
         <TabPanels>
           <TabPanel>
             <Flex direction={flexDirection}>
-              <Box w={["100%", "100%", "100%", "40%"]} mt={5}>
+              <Box mt={5}>
                 <Heading
                   color="#FFFFFF"
                   w={{
@@ -196,7 +202,7 @@ function Access() {
                     }}
                   />
                 </Box>
-                <Center>
+                <Box w={"100%"}>
                   <Text
                     fontSize={"14px"}
                     fontFamily="CustomFont, MatterSQ-Regular"
@@ -207,7 +213,7 @@ function Access() {
                   >
                     Terms and conditions apply
                   </Text>
-                </Center>
+                </Box>
               </Box>
               <Spacer />
 
@@ -235,7 +241,7 @@ function Access() {
           </TabPanel>
           <TabPanel>
             <Flex direction={flexDirection}>
-              <Box w={["100%", "100%", "100%", "40%"]} mt={5}>
+              <Box mt={5}>
                 <Heading
                   color="#FFFFFF"
                   w={{
@@ -337,7 +343,7 @@ function Access() {
                     }}
                   />
                 </Box>
-                <Center>
+                <Box>
                   <Text
                     fontSize={"14px"}
                     fontFamily="CustomFont, MatterSQ-Regular"
@@ -348,8 +354,9 @@ function Access() {
                   >
                     Terms and conditions apply
                   </Text>
-                </Center>
+                </Box>
               </Box>
+
               <Spacer />
 
               <Box

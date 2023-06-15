@@ -20,18 +20,7 @@ function Product() {
       <Center display={["flex", "flex", "none"]} mt={20} px={6}>
         <Image src="./card.svg" objectFit={"contain"} />
       </Center>
-      <Center
-        px={{ base: "1%", sm: "2%", md: "4%", lg: "10%" }}
-        w={{
-          base: "100%",
-          sm: "100%",
-          md: "100%",
-          lg: "104%",
-          xl: "104%",
-          "2xl": "104%",
-        }}
-        display={["none", "none", "flex"]}
-      >
+      <Center p={"6.5%"} w={"100%"} display={["none", "none", "flex"]}>
         <Center mt={"20%"}>
           <Card
             direction={{

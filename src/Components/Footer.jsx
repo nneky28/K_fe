@@ -13,7 +13,7 @@ import CustomButton from "./CustomButton";
 export default function Footer() {
   const today = new Date();
   return (
-    <Box pos="relative" bg="black" overflow="hidden" mt={"5%"}>
+    <Box pos="relative" bg="black" overflow="hidden">
       <Flex
         bg="#1B1C20"
         w="100%"

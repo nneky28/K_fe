@@ -21,22 +21,31 @@ function Shop() {
     <Center pos={"relative"} mt={"5%"}>
       <SimpleGrid
         columns={[1, 1, 2, 2, 2]}
-        spacing={{ base: 0, sm: 0, lg: 5, md: 5, "2xl": 12 }}
-        ms={["0%", "5%"]}
-        px={[4, "5%"]}
+        spacing={{ base: 0, sm: 0, lg: 10, md: 5, "2xl": 12 }}
+        ms={["0%", "2.5%"]}
+        px={[0, "4%"]}
       >
-        <Flex gap={["4", "1", "2"]} w={["100%", "95%"]}>
-          <Box mt={[20, 20, 20, 20, 20, "30%"]}>
+        {/*  */}
+        <Flex gap={["4", "1", "2"]} w={["100%", "95%"]} pos={"relative"}>
+          <Box pos={"relative"} mt={[20, 20, 20, 20, 20, "30%"]}>
+            <Box pos={"absolute"} top={"-20%"} left={"-8%"}>
+              <Image
+                src="./discount.gif"
+                objectFit={"contain"}
+                alt="Discount"
+                w={"40%"}
+              />
+            </Box>
             <Image
               src={girls}
               objectFit={"cover"}
               ms={{
                 base: "18%",
                 sm: "20%",
-                md: "11%",
+                md: "16%",
                 lg: "20%",
-                xl: "9%",
-                "2xl": "17%",
+                xl: "13%",
+                "2xl": "20%",
               }}
               w={{
                 "2xl": "18vw",
@@ -52,9 +61,9 @@ function Shop() {
               mt={[1, 2, 4, 4, 5, 10]}
               w={{
                 "2xl": "130vw",
-                xl: "215vw",
+                xl: "220vw",
                 lg: "865vh",
-                md: "512vw",
+                md: "520vw",
                 base: "80%",
                 sm: "400vw",
               }}
@@ -68,9 +77,10 @@ function Shop() {
               w={{
                 md: "444vw",
                 sm: "320vw",
-                xl: "188vw",
-                lg: "508vw",
-                "2xl": "107vw",
+                xl: "186vw",
+                lg: "235vw",
+
+                "2xl": "109vw",
               }}
             />
           </Box>
@@ -145,7 +155,7 @@ function Shop() {
                 "2xl": "17px",
               }}
               color={"#B4BECB"}
-              w={{ base: 250, md: 335, lg: 460, xl: 520, sm: 322, "2xl": 933 }}
+              w={{ base: 250, md: 335, lg: 460, xl: 520, sm: 307, "2xl": 933 }}
               pr={{ base: 1 }}
               fontFamily={`CustomFont, MatterSQ-Regular`}
             >

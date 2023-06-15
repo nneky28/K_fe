@@ -13,8 +13,19 @@ const two = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321857/2_ues
 const three = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321915/3_ygevgy.png"
 const four = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321959/4_mgh2j7.png"
 const five = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686321989/5_bo36t9.png"
+const six = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686765838/6_nb7g7o.png"
 const sell = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686522437/side-view-smiley-woman-with-clothes_1_cyephj.png"
 const merchant = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686522517/image_1_ugchdo.png"
+const seven = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686765886/7_q7wlpb.png"
+const eight = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686765936/8_iqyivu.png"
+const nine = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686766122/9_qw1cne.png"
+const ten = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686766180/11_wxorny.png"
+const eleven = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686766215/12_he7y7y.png"
+const twelve = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686766255/13_e18dbw.png"
+const feMobile = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686766569/phone_ifm7wm.png"
+const shadow = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686766665/shadow_ywcjxi.png"
+const discover = "https://res.cloudinary.com/dab0tyudx/image/upload/v1686766701/discover_kavr92.png"
+
 
 export {
     family,
@@ -33,5 +44,15 @@ export {
     four,
     five,
     merchant,
-    sell
+    sell,
+    six,
+    seven,
+    eight,
+    nine,
+    ten,
+    eleven,
+    twelve,
+    feMobile,
+    shadow,
+    discover
 }

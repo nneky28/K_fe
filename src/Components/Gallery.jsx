@@ -12,7 +12,21 @@ import {
 import ReactPlayer from "react-player";
 import Marquee from "react-fast-marquee";
 import React, { useEffect, useState } from "react";
-import { one, two, three, four, five } from "../assets/images";
+import {
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  eight,
+  seven,
+  nine,
+  ten,
+  eleven,
+  twelve,
+  discover,
+} from "../assets/images";
 
 function Gallery() {
   const [isVideoPlaying, setVideoPlaying] = useState(false);
@@ -26,16 +40,16 @@ function Gallery() {
     { id: 3, img: three },
     { id: 4, img: four },
     { id: 5, img: five },
-    { id: 6, img: "./people/6.png" },
-    { id: 7, img: "./people/7.png" },
-    { id: 8, img: "./people/8.png" },
+    { id: 6, img: six },
+    { id: 7, img: seven },
+    { id: 8, img: eight },
   ];
 
   const images1 = [
-    { id: 11, img: "./people/11.png" },
-    { id: 12, img: "./people/12.png" },
-    { id: 13, img: "./people/13.png" },
-    { id: 14, img: "./people/14.png" },
+    { id: 11, img: nine },
+    { id: 12, img: ten },
+    { id: 13, img: eleven },
+    { id: 14, img: twelve },
     { id: 15, img: "./people/15.png" },
     { id: 16, img: "./people/16.png" },
     { id: 17, img: "./people/17.png" },
@@ -64,7 +78,7 @@ function Gallery() {
     <Box w={"100%"}>
       <Center mt={{ md: "5%", "2xl": "0", xl: "0" }}>
         <Image
-          src="./discover.png"
+          src={discover}
           style={{
             objectFit: "contain",
 

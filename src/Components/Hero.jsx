@@ -10,7 +10,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
-import { overlay, video } from "../assets/images";
+import { overlay, shadow, video } from "../assets/images";
 import ReactPlayer from "react-player";
 import CustomButton from "./CustomButton";
 
@@ -230,7 +230,7 @@ function Hero() {
         </Box>
 
         <Box
-          backgroundImage="url('./shadow.png')"
+          backgroundImage={`url(${shadow})`}
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
           backgroundSize={"380px"}
@@ -262,7 +262,7 @@ function Hero() {
             <Box
               // order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
               w={{
-                sm: "95%",
+                sm: "90%",
                 lg: "80%",
                 md: "80%",
                 xl: "75%",
@@ -271,19 +271,17 @@ function Hero() {
               }}
             >
               <ReactPlayer
-                // url="https://res.cloudinary.com/duprallvm/video/upload/v1685626517/Screen_Recording_2023-06-01_at_10.53.14_c1wzv9.mov"
                 url="https://res.cloudinary.com/duprallvm/video/upload/v1686317785/Screen-Recording-2023-06-01-at-1_r0yzir.mp4"
                 playing={true}
                 loop={true}
                 width="85%"
-                // controls
                 height="95%"
               />
 
               <Box
                 pos={"absolute"}
                 h={{
-                  sm: "28%",
+                  sm: "35%",
                   xl: "330px",
                   base: "18%",
                   md: "285px",
@@ -291,7 +289,7 @@ function Hero() {
                 w={"88%"}
                 top={{
                   base: "68%",
-                  sm: "67%",
+                  sm: "60%",
                   md: "48%",
                   lg: "52%",
                   "2xl": "70%",
@@ -300,7 +298,16 @@ function Hero() {
                 left={6.1}
                 bgGradient="linear(to-t, black 7.81%, black 54.57%,rgba(6, 8, 9, 0)  100%)"
                 opacity={1}
-              ></Box>
+              >
+                <Box alignSelf={"right"} pos={"absolute"} left={"40%"}>
+                  <Image
+                    src="./likes.gif"
+                    objectFit={"contain"}
+                    alt="likes"
+                    w={"50%"}
+                  />
+                </Box>
+              </Box>
             </Box>
           </Flex>
         </Box>

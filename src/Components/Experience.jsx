@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { phoneImage, text } from "../assets/images";
+import { feMobile, phoneImage, text } from "../assets/images";
 import CustomButton from "./CustomButton";
 
 function Experience() {
@@ -20,23 +20,23 @@ function Experience() {
         <Box zIndex={0} position="relative" bg="#060809">
           <Marquee autoFill={true} bg="black">
             <Box>
-              <Image src={text} objectFit="contain" maxW="100%" speed={2} />
+              <Image src={text} objectFit="contain" maxW="100%" speed={1} />
             </Box>
           </Marquee>
-          <Marquee direction="right" autoFill={true} speed={2}>
+          <Marquee direction="right" autoFill={true} speed={5}>
             <Box>
               <Image src={text} objectFit="contain" maxW="100%" />
             </Box>
           </Marquee>
           <Marquee autoFill={true}>
             <Box>
-              <Image src={text} objectFit="contain" speed={2} />
+              <Image src={text} objectFit="contain" speed={1} />
             </Box>
           </Marquee>
         </Box>
         <Center>
           <Box
-            bgImage="url('./phone.png')"
+            backgroundImage={`url(${feMobile})`}
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
             backgroundSize={isSmallerThanMd ? "70% 100%" : "contain"}
