@@ -76,7 +76,7 @@ function Access() {
             I’m a Seller
           </Tab>
           <Tab
-            fontSize={["13px", "13px", "13px", "13px", "13px", "20px"]}
+            fontSize={["12px", "13px", "13px", "13px", "13px", "20px"]}
             // fontSize={"13px"}
             fontFamily="CustomFont, MatterSQ-Regular"
             w={{
@@ -92,7 +92,7 @@ function Access() {
               borderRadius: "full",
               h: "28px",
               mr: isSmallerThanMd ? 0.5 : 0.5,
-              w: isSmallerThanMd ? "100%" : "2xl" ? "60%" : "124px",
+              // w: isSmallerThanMd ? "100%" : "2xl" ? "60%" : "70%",
             }}
           >
             I’m a Shopper

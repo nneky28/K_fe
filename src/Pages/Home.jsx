@@ -54,7 +54,7 @@
 
 // export default Home;
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import Gallery from "../Components/Gallery";
@@ -69,23 +69,14 @@ function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker
-        .register("/service-worker.js")
-        .then((registration) => {
-          console.log("Service worker registered:", registration);
-        })
-        .catch((error) => {
-          console.error("Error registering service worker:", error);
-        });
-    }
-
     const delay = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(delay);
   }, []);
+
+  const Gallery = React.lazy(() => import("../Components/Gallery"));
 
   return (
     <>
@@ -107,10 +98,12 @@ function Home() {
         >
           <Navbar />
           <Hero />
-          <Gallery />
-          <Shop />
-          <Product />
-          <Experience />
+          <Suspense>
+            <Gallery />
+            <Shop />
+            <Product />
+            <Experience />
+          </Suspense>
           <Access />
           <Footer />
         </Box>
