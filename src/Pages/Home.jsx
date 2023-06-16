@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
 import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
-// import Gallery from "../Components/Gallery";
+import Gallery from "../Components/Gallery";
 import { Box, Center, Image } from "@chakra-ui/react";
 import Shop from "../Components/Shop";
 import Product from "../Components/Product";
@@ -44,25 +44,14 @@ function Home() {
         >
           <Navbar />
           <Hero />
-          <Suspense
-            fallback={
-              <Center bg="black" width={"100%"} overflow={"hidden"} h={"100vh"}>
-                <Image
-                  src="./loading.gif"
-                  objectFit={"contain"}
-                  alt="loading"
-                  w={"30%"}
-                />
-              </Center>
-            }
-          >
+          <Suspense fallback={<Box bg="black" />}>
             <Gallery />
             <Shop />
             <Product />
             <Experience />
+            <Access />
           </Suspense>
 
-          <Access />
           <Footer />
         </Box>
       )}
