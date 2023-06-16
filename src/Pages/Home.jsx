@@ -103,8 +103,8 @@ function Home() {
             <Shop />
             <Product />
             <Experience />
-            <Access />
           </Suspense>
+          <Access />
           <Footer />
         </Box>
       )}
