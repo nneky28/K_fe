@@ -71,12 +71,13 @@ function Home() {
   useEffect(() => {
     const delay = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 3000);
 
     return () => clearTimeout(delay);
   }, []);
 
   const Gallery = React.lazy(() => import("../Components/Gallery"));
+  // const Shop = React.lazy(() => import("../Components/Shop"));
 
   return (
     <>
@@ -95,15 +96,28 @@ function Home() {
           width={"100%"}
           overflow={"hidden"}
           bg="black"
+          pos={"relative"}
         >
           <Navbar />
           <Hero />
-          <Suspense>
+          <Suspense
+            fallback={
+              <Center bg="black" width={"100%"} overflow={"hidden"} h={"100vh"}>
+                <Image
+                  src="./loading.gif"
+                  objectFit={"contain"}
+                  alt="loading"
+                  w={"30%"}
+                />
+              </Center>
+            }
+          >
             <Gallery />
             <Shop />
             <Product />
             <Experience />
           </Suspense>
+
           <Access />
           <Footer />
         </Box>
