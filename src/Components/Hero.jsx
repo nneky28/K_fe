@@ -236,7 +236,7 @@ function Hero() {
           backgroundSize={"380px"}
           pos={"relative"}
           mt={{ sm: "10%", base: "20%", md: "10%", lg: "0" }}
-          ms={{ base: "15%", sm: "15%", md: "0", lg: "0", "2xl": "0" }}
+          ms={{ base: "18%", sm: "18%", md: "0", lg: "0", "2xl": "0" }}
         >
           <Flex filter="auto" brightness="90%" pos={"relative"}>
             <Box
@@ -262,7 +262,7 @@ function Hero() {
             <Box
               // order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
               w={{
-                sm: "90%",
+                sm: "91%",
                 lg: "80%",
                 md: "80%",
                 xl: "75%",
