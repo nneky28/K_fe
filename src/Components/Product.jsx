@@ -17,7 +17,7 @@ import CustomButton from "./CustomButton";
 function Product() {
   return (
     <>
-      <Center display={["flex", "flex", "none"]} mt={20} px={6}>
+      <Center display={["flex", "flex", "none"]} mt={20} px={6} bg="#060809">
         <Image src="./card.svg" objectFit={"contain"} />
       </Center>
       <Center p={"6.5%"} w={"100%"} display={["none", "none", "flex"]}>

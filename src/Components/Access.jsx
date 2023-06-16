@@ -22,6 +22,7 @@ import CustomButton from "./CustomButton";
 function Access() {
   const flexDirection = useBreakpointValue({
     base: "column",
+    md: "row",
     lg: "row",
   });
   const [isSmallerThanMd] = useMediaQuery(
@@ -39,7 +40,7 @@ function Access() {
       w={"100%"}
       justifyContent={"center"}
       alignSelf={"center"}
-      mb={"7%"}
+      bg="#060809"
     >
       <Tabs variant="unstyled" pos={"relative"}>
         <TabList
@@ -70,14 +71,12 @@ function Access() {
               borderRadius: "full",
               h: "28px",
               ml: isSmallerThanMd ? 0.5 : 0.5,
-              w: isSmallerThanMd ? "100%" : "2xl" ? "60%" : "124px",
             }}
           >
             I’m a Seller
           </Tab>
           <Tab
             fontSize={["12px", "13px", "13px", "13px", "13px", "20px"]}
-            // fontSize={"13px"}
             fontFamily="CustomFont, MatterSQ-Regular"
             w={{
               base: "64%",
@@ -92,7 +91,6 @@ function Access() {
               borderRadius: "full",
               h: "28px",
               mr: isSmallerThanMd ? 0.5 : 0.5,
-              // w: isSmallerThanMd ? "100%" : "2xl" ? "60%" : "70%",
             }}
           >
             I’m a Shopper
@@ -107,7 +105,7 @@ function Access() {
                   w={{
                     base: "100%",
                     sm: "100%",
-                    md: "100%",
+                    md: "95%",
                     lg: "405px",
                     xl: "405px",
                     "2xl": "100%",
@@ -135,7 +133,7 @@ function Access() {
                   w={{
                     base: "100%",
                     sm: "100%",
-                    md: "100%",
+                    md: "85%",
                     lg: "391px",
                     xl: "391px",
                     "2xl": "100%",
@@ -156,7 +154,7 @@ function Access() {
                   w={{
                     base: "100%",
                     sm: "100%",
-                    md: "100%",
+                    md: "80%",
                     lg: "405px",
                     xl: "405px",
                     "2xl": "100%",
@@ -177,7 +175,7 @@ function Access() {
                     w={{
                       base: "100%",
                       sm: "100%",
-                      md: "100%",
+                      md: "80%",
                       lg: "405px",
                       xl: "405px",
                       "2xl": "100%",
@@ -195,14 +193,23 @@ function Access() {
                     width={{
                       base: "100%",
                       sm: "100%",
-                      md: "100%px",
+                      md: "80%",
                       lg: "405px",
                       xl: "405px",
                       "2xl": "100%",
                     }}
                   />
                 </Box>
-                <Box w={"100%"}>
+                <Center
+                  width={{
+                    base: "100%",
+                    sm: "100%",
+                    md: "80%",
+                    lg: "405px",
+                    xl: "405px",
+                    "2xl": "86%",
+                  }}
+                >
                   <Text
                     fontSize={"14px"}
                     fontFamily="CustomFont, MatterSQ-Regular"
@@ -213,7 +220,7 @@ function Access() {
                   >
                     Terms and conditions apply
                   </Text>
-                </Box>
+                </Center>
               </Box>
               <Spacer />
 
@@ -229,7 +236,7 @@ function Access() {
                 mt={{
                   base: "15%",
                   sm: "15%",
-                  md: "15%",
+                  md: "12",
                   lg: "-5%",
                   xl: "-8%",
                   "2xl": "-2%",
@@ -247,7 +254,7 @@ function Access() {
                   w={{
                     base: "100%",
                     sm: "100%",
-                    md: "100%",
+                    md: "95%",
                     lg: "405px",
                     xl: "405px",
                     "2xl": "100%",
@@ -268,10 +275,10 @@ function Access() {
                   w={{
                     base: "100%",
                     sm: "100%",
-                    md: "100%",
+                    md: "80%",
                     lg: "391px",
                     xl: "391px",
-                    "2xl": "100%",
+                    "2xl": "90%",
                   }}
                   fontSize={["14px", "14px", "14px", "14px", "14px", "20px"]}
                   fontFamily="CustomFont, MatterSQ-Regular"
@@ -297,13 +304,12 @@ function Access() {
                   w={{
                     base: "100%",
                     sm: "100%",
-                    md: "100%",
+                    md: "80%",
                     lg: "405px",
                     xl: "405px",
-                    "2xl": "100%",
+                    "2xl": "86%",
                   }}
                   h={"45px"}
-                  mr={2}
                   color="#B4BECB"
                   fontSize={"13px"}
                   fontFamily={`CustomFont, MatterSQ-Regular`}
@@ -318,10 +324,10 @@ function Access() {
                     w={{
                       base: "100%",
                       sm: "100%",
-                      md: "100%",
+                      md: "80%",
                       lg: "405px",
                       xl: "405px",
-                      "2xl": "100%",
+                      "2xl": "86%",
                     }}
                     h={"45px"}
                     mr={2}
@@ -336,29 +342,35 @@ function Access() {
                     width={{
                       base: "100%",
                       sm: "100%",
-                      md: "100%px",
+                      md: "80%",
                       lg: "405px",
                       xl: "405px",
-                      "2xl": "100%",
+                      "2xl": "86%",
                     }}
                   />
-                </Box>
-                <Box>
-                  <Text
-                    fontSize={"14px"}
-                    fontFamily="CustomFont, MatterSQ-Regular"
-                    color={"#FA4354"}
-                    textAlign={"center"}
-                    textDecoration={"underline"}
-                    mt={6}
+                  <Center
+                    width={{
+                      base: "100%",
+                      sm: "100%",
+                      md: "80%",
+                      lg: "405px",
+                      xl: "405px",
+                      "2xl": "86%",
+                    }}
                   >
-                    Terms and conditions apply
-                  </Text>
+                    <Text
+                      fontSize={"14px"}
+                      fontFamily="CustomFont, MatterSQ-Regular"
+                      color={"#FA4354"}
+                      textDecoration={"underline"}
+                      mt={6}
+                    >
+                      Terms and conditions apply
+                    </Text>
+                  </Center>
                 </Box>
               </Box>
-
               <Spacer />
-
               <Box
                 w={{
                   base: "100%",
@@ -371,13 +383,13 @@ function Access() {
                 mt={{
                   base: "15%",
                   sm: "15%",
-                  md: "15%",
+                  md: "5%",
                   lg: "-8%",
                   xl: "-8%",
                   "2xl": "-2%",
                 }}
               >
-                <Image src={merchant} objectFit={"contain"} />
+                <Image src={merchant} objectFit={"contain"} h={"100%"} />
               </Box>
             </Flex>
           </TabPanel>

@@ -10,7 +10,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
-import { overlay, shadow, video } from "../assets/images";
+import { shadow, video } from "../assets/images";
 import ReactPlayer from "react-player";
 import CustomButton from "./CustomButton";
 
@@ -260,7 +260,6 @@ function Hero() {
               />
             </Box>
             <Box
-              // order={{ base: 1, sm: 1, md: 2, lg: 2, "2xl": 2 }}
               w={{
                 sm: "91%",
                 lg: "80%",
@@ -276,6 +275,7 @@ function Hero() {
                 loop={true}
                 width="85%"
                 height="95%"
+                muted={true}
               />
 
               <Box

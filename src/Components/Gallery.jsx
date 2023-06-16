@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 // import React from "react";
 import ReactPlayer from "react-player";
+
 import Marquee from "react-fast-marquee";
 import React, { useEffect, useState } from "react";
 import {
@@ -198,9 +199,7 @@ function Gallery() {
         <ReactPlayer
           url="https://res.cloudinary.com/duprallvm/video/upload/v1686317856/Screen-Recording-2023-06-01-at-1_1_zvydcx.mp4"
           playing={true}
-          onReady={() => {
-            setVideoPlaying(true);
-          }}
+          muted={true}
           loop={true}
           width="100%"
           height="100%"
